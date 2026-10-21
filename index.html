@@ -7,58 +7,68 @@
 
     <title>You Cantine</title>
 </head>
-<body>
+<body class="bg-stone-100 text-gray-800">
 <header class="bg-white border-b border-gray-200 flex justify-between items-center px-6 py-3">
     <img src="img/logo.png" alt="logo" height="90px" width="200px">
-    <div class="flex justify-center">  
-        <span>semaine du 27 Oct.</span>
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Mode sombre</button>
-        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Add une reccette</button>
-        
-
+    <div class="flex items-center gap-3">  
+         <span class="border border-gray-200 rounded-lg px-4 py-2 text-gray-500">Semaine du 19 oct.</span>
+        <button class="border border-gray-200 rounded-lg px-3 py-2">🌙 Mode Sombre</button>
+          <button class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-lg">+ Ajouter une recette</button>
+         
     </div>
-    
 </header>
-<main>
-    <section>
-        <div>
-            <p>Planification hebdomadaire</p>
-            <h1 > Bonjour ,</h1>
-            <p>Composez une semaine gourmande, équilibrée et maîtrisée.</p>
-
-        </div>
+<main class="p-6">
+    <section class="bg-green-900 text-white rounded-3xl p-10 pb-16">
+            <p class="text-green-400 text-sm font-bold tracking-widest">Planification hebdomadaire</p>
+            <h1 class="text-5xl font-bold mt-3"> Bonjour ,</h1>
+            <p class="text-gray-300 text-xl mt-3">Composez une semaine gourmande, équilibrée et maîtrisée.</p>
     </section>
-    <section class="articles">
-        <article class="card1">
-            <span>Dans la réserve</span>
-            <strong>5 </strong>
-            <small>plats</small>
-            <h6>Disponibles</h6>
-        </article>
-        <acticle class="card2">
-            <span>Jours prêts</span>
-            <strong >2</strong>
-            <small>/5</small>
-            <div class="mini-progress">
-                <i></i>
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 -mt-10 px-4">
+ 
+        <article class="bg-white rounded-2xl shadow p-5 flex items-center gap-4">
+            <div class="bg-orange-100 rounded-xl w-12 h-12 flex items-center justify-center">🍽️</div>
+            <div>
+                <span class="text-sm text-gray-500">Dans la réserve</span>
+                <p><strong class="text-2xl">5</strong> <small class="text-gray-500">plats</small></p>
+                <h6 class="text-xs text-gray-400">Disponibles</h6>
             </div>
-        </acticle>    
-        <article class="card3">
-            <span>Coût de la semaine</span>
-            <strong>86</strong>
-            <small>DH</small>
-            <h6>par apprenant</h6>
-        </article>  
-        <article class="card4">
-            <span>Équilibre alimentaire</span>
-            <strong>Équilibré</strong>
         </article>
-        
+ 
+        <article class="bg-white rounded-2xl shadow p-5 flex items-center gap-4">
+            <div class="bg-green-100 rounded-xl w-12 h-12 flex items-center justify-center">✔️</div>
+            <div class="flex-1">
+                <span class="text-sm text-gray-500">Jours prêts</span>
+                <p><strong class="text-2xl">2</strong><small class="text-gray-500">/5</small></p>
+                
+                <div class="bg-gray-200 rounded-full h-1 w-full">
+                    <div class="bg-green-500 h-1 rounded-full w-2/5"></div>
+                </div>
+            </div>
+        </article>
+ 
+        <article class="bg-white rounded-2xl shadow p-5 flex items-center gap-4">
+            <div class="bg-orange-100 rounded-xl w-12 h-12 flex items-center justify-center">👛</div>
+            <div>
+                <span class="text-sm text-gray-500">Coût de la semaine</span>
+                <p><strong class="text-2xl">86</strong> <small class="text-gray-500">DH</small></p>
+                <h6 class="text-xs text-gray-400">par apprenant</h6>
+            </div>
+        </article>
+ 
+        <article class="bg-white rounded-2xl shadow p-5 flex items-center gap-4">
+            <div class="bg-green-100 rounded-xl w-12 h-12 flex items-center justify-center">🌿</div>
+            <div class="flex-1">
+                <span class="text-sm text-gray-500">Équilibre alimentaire</span>
+                <p><strong class="text-xl">Équilibré</strong></p>
+            </div>
+            <span class="text-green-500">●</span>
+        </article>
+ 
     </section>
 
     <div class="section-hidden">
         <div class="title.row">
-        <h2>Menu de la semaine</h2>
+        <h2 class="text-2xl font-bold text-gray-900 mb-2">Menu de la semaine</h2>
        
 
     </div>
