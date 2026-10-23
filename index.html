@@ -276,7 +276,7 @@
             </h2>
             <p class="text-gray-500 mt-1">Votre garde-manger, prêt à enrichir la semaine.</p>
         </div>
-        <button class="bg-white border border-gray-200 hover:bg-gray-50 font-semibold px-5 py-3 rounded-xl"><i data-lucide="plus" class="w-4 h-4 inline"></i> Nouvelle recette</button>
+        <button type="button" id="Ajouter" class="bg-white border border-gray-200 hover:bg-gray-50 font-semibold px-5 py-3 rounded-xl"><i data-lucide="plus" class="w-4 h-4 inline"></i> + Nouvelle recette</button>
     </div>
  
     
@@ -539,7 +539,12 @@
  
     </div>
 </section>
-
+<div id="modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 p-4">
+  <div class="w-full max-w-md rounded-2xl bg-white p-6 text-stone-900">
+    <h2 class="text-xl font-bold">Nouvelle recette</h2>
+    <p class="text-sm text-stone-500">Renseignez les informations du plat.</p>
+  </div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
