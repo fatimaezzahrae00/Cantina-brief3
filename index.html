@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,544 +8,736 @@
 
     <title>You Cantine</title>
 </head>
+
 <body class="bg-stone-100 text-gray-800">
-<header class="bg-white border-b border-gray-200 flex justify-between items-center px-6 py-3">
-    <img src="img/logo.png" alt="logo" height="90px" width="200px">
-    <div class="flex items-center gap-3">  
-         <span class="border border-gray-200 rounded-lg px-4 py-2 text-gray-500">Semaine du 19 oct.</span>
-        <button class="border border-gray-200 rounded-lg px-3 py-2">🌙 Mode Sombre</button>
-          <button class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-lg">+ Ajouter une recette</button>
-         
-    </div>
-</header>
-<main class="p-6">
-    <section class="bg-green-900 text-white rounded-3xl p-10 pb-16">
+    <header class="bg-white border-b border-gray-200 flex justify-between items-center px-6 py-3">
+        <img src="img/logo.png" alt="logo" height="90px" width="200px">
+        <div class="flex items-center gap-3">
+            <span class="border border-gray-200 rounded-lg px-4 py-2 text-gray-500">Semaine du 19 oct.</span>
+             <!-- <button class="border border-gray-200 rounded-lg px-3 py-2">🌙 Mode Sombre</button>  -->
+            <!-- <button class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-lg">+ Ajouter une
+                recette</button> -->
+
+        </div>
+    </header>
+    <main class="p-6">
+        <section class="bg-green-900 text-white rounded-3xl p-10 pb-16">
             <p class="text-green-400 text-sm font-bold tracking-widest">Planification hebdomadaire</p>
             <h1 class="text-5xl font-bold mt-3"> Bonjour ,</h1>
             <p class="text-gray-300 text-xl mt-3">Composez une semaine gourmande, équilibrée et maîtrisée.</p>
-    </section>
-    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 -mt-10 px-4">
- 
-        <article class="bg-white rounded-2xl shadow p-5 flex items-center gap-4">
-            <div class="bg-orange-100 rounded-xl w-12 h-12 flex items-center justify-center">🍽️</div>
-            <div>
-                <span class="text-sm text-gray-500">Dans la réserve</span>
-                <p><strong class="text-2xl">5</strong> <small class="text-gray-500">plats</small></p>
-                <h6 class="text-xs text-gray-400">Disponibles</h6>
+        </section>
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 -mt-10 px-4">
+
+            <article class="bg-white rounded-2xl shadow p-5 flex items-center gap-4">
+                <div class="bg-orange-100 rounded-xl w-12 h-12 flex items-center justify-center">🍽️</div>
+                <div>
+                    <span class="text-sm text-gray-500">Dans la réserve</span>
+                    <p><strong class="text-2xl">5</strong> <small class="text-gray-500">plats</small></p>
+                    <h6 class="text-xs text-gray-400">Disponibles</h6>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-2xl shadow p-5 flex items-center gap-4">
+                <div class="bg-green-100 rounded-xl w-12 h-12 flex items-center justify-center">✔️</div>
+                <div class="flex-1">
+                    <span class="text-sm text-gray-500">Jours prêts</span>
+                    <p><strong class="text-2xl">2</strong><small class="text-gray-500">/5</small></p>
+
+                    <div class="bg-gray-200 rounded-full h-1 w-full">
+                        <div class="bg-green-500 h-1 rounded-full w-2/5"></div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-2xl shadow p-5 flex items-center gap-4">
+                <div class="bg-orange-100 rounded-xl w-12 h-12 flex items-center justify-center">👛</div>
+                <div>
+                    <span class="text-sm text-gray-500">Coût de la semaine</span>
+                    <p><strong class="text-2xl">86</strong> <small class="text-gray-500">DH</small></p>
+                    <h6 class="text-xs text-gray-400">par apprenant</h6>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-2xl shadow p-5 flex items-center gap-4">
+                <div class="bg-green-100 rounded-xl w-12 h-12 flex items-center justify-center">🌿</div>
+                <div class="flex-1">
+                    <span class="text-sm text-gray-500">Équilibre alimentaire</span>
+                    <p><strong class="text-xl">Équilibré</strong></p>
+                </div>
+                <span class="text-green-500">●</span>
+            </article>
+
+        </section>
+
+        <div class="section-hidden">
+            <div class="title.row">
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">Menu de la semaine</h2>
+
+
             </div>
-        </article>
- 
-        <article class="bg-white rounded-2xl shadow p-5 flex items-center gap-4">
-            <div class="bg-green-100 rounded-xl w-12 h-12 flex items-center justify-center">✔️</div>
-            <div class="flex-1">
-                <span class="text-sm text-gray-500">Jours prêts</span>
-                <p><strong class="text-2xl">2</strong><small class="text-gray-500">/5</small></p>
+            <div class="flex justify-between items-center mb-6">
+                <p class="text-gray-500">Glissez une recette ou sélectionnez-la dans chaque créneau.</p>
+
+                <div class="flex gap-3">
+                    <!-- <button class="bg-white px-4 py-2 rounded-lg shadow">Cartes</button>
+                    <button class="px-4 py-2 rounded-lg text-gray-500">Tableau</button> -->
+                    <!-- <button class="bg-green-100 text-green-800 px-4 py-2 rounded-full border border-green-300">Compléter
+                        la semaine</button> -->
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+
+                <!--First card for monday-->
+                <div class="bg-white rounded-2xl border border-gray-200 border-t-4 border-t-green-500 overflow-hidden">
+                    <div class="p-4 border-b">
+                         <div class="flex items-center justify-between">
+                            <p class="text-xs text-gray-500">20 OCT.</p>
+                            <div class="flex justify-end gap-2">
+                            <button class="bg-white rounded-lg p-1 border border-green-300 "> Modifier</button>
+                            <button class="bg-white rounded-lg p-1 border border-red-500 ">Supprimer</button>
+                            </div>
+                        </div>
+                        <h2 class="text-xl font-bold">Lundi</h2>
+                    </div>
+                <div class="p-4">
+                    <div class="mb-4 pb-3 border-b">
+                    <p class="text-xs text-gray-500 mt-4"><span class="text-green-500">●</span> ENTRÉE</p>
+                    <select name="card" id="selection" class="w-full border border-slate-700 rounded-md p-2 ">
+                        <option value="selection">Choisir une entrée</option>
+                    </select>
+                    </div>
+                    <div class="mb-4 pb-3 border-b">
+                    <p class="text-xs text-gray-500"><span class="text-purple-500">●</span> PLAT PRINCIPAL</p>
+                    <select name="card" id="selection" class="w-full border border-slate-700 rounded-md p-2 ">
+                        <option value="selection">Choisir un Plat principal</option>
+                    </select>
+                    </div>
+                    <p class="text-xs text-gray-500"><span class="text-orange-400">●</span> DESSERT</p>
+                   <select name="card" id="selection" class="w-full border border-slate-700 rounded-md p-2 ">
+                        <option value="selection">Choisir un dessert</option>
+                    </select>
+                </div>
+                    <!-- <div class="p-4">
+                        
+                        <div class="mb-4 pb-3 border-b">
+                            <p class="text-xs text-gray-500"><span class="text-green-500">●</span> ENTRÉE</p>
+                            <p class="font-semibold">Velouté de courgettes</p>
+                            <p class="text-xs text-gray-400">+6 DH</p>
+                        </div>
+                        <div class="mb-4 pb-3 border-b">
+                            <p class="text-xs text-gray-500"><span class="text-purple-500">●</span> PLAT PRINCIPAL</p>
+                            <p class="font-semibold">Tajine de poulet</p>
+                            <p class="text-xs text-gray-400">+27 DH</p>
+                        </div>
+                        <div class="mb-2">
+                            <p class="text-xs text-gray-500"><span class="text-orange-400">●</span> DESSERT</p>
+                            <p class="font-semibold">Fruits de saison</p>
+                            <p class="text-xs text-gray-400">+7 DH</p>
+                        </div>
+                    </div> -->
+
+                    <div class="bg-gray-100 p-4 flex justify-between items-center">
+                        <div>
+                            <p class="font-semibold">Total du jour</p>
+                            <!-- <p class="text-xs text-gray-500">10 DH restants</p> -->
+                        </div>
+                        <p class="text-2xl font-bold">0 <span class="text-xs font-normal text-gray-500">/ 50 DH</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-gray-200 border-t-4 border-t-green-500 overflow-hidden">
+                    <div class="p-4 border-b">
+                         <div class="flex items-center justify-between">
+                            <p class="text-xs text-gray-500">20 OCT.</p>
+                            <div class="flex justify-end gap-2">
+                            <button class="bg-white rounded-lg p-1 border border-green-300 "> Modifier</button>
+                            <button class="bg-white rounded-lg p-1 border border-red-500 ">Supprimer</button>
+                            </div>
+                        </div>
+                        <h2 class="text-xl font-bold">Mardi</h2>
+                    </div>
+
+                    <div class="p-4">
+                        <div class="mb-4 pb-3 border-b">
+                    <p class="text-xs text-gray-500 mt-4"><span class="text-green-500">●</span> ENTRÉE</p>
+                    <select name="card" id="selection" class="w-full border border-slate-700 rounded-md p-2 ">
+                        <option value="selection">Choisir une entrée</option>
+                    </select>
+                    </div>
+                    <div class="mb-4 pb-3 border-b">
+                    <p class="text-xs text-gray-500"><span class="text-purple-500">●</span> PLAT PRINCIPAL</p>
+                    <select name="card" id="selection" class="w-full border border-slate-700 rounded-md p-2 ">
+                        <option value="selection">Choisir un plat principal</option>
+                    </select>
+                    </div>
+                    <p class="text-xs text-gray-500"><span class="text-orange-400">●</span> DESSERT</p>
+                   <select name="card" id="selection" class="w-full border border-slate-700 rounded-md p-2 ">
+                        <option value="selection">Choisir un dessert</option>
+                    </select>
+
+                        <!-- <div class="mb-4 pb-3 border-b">
+                            <p class="text-xs text-gray-500"><span class="text-green-500">●</span> ENTRÉE</p>
+                            <p class="font-semibold">Salade marocaine</p>
+                            <p class="text-xs text-gray-400">+7 DH</p>
+                        </div>
+                        <div class="mb-4 pb-3 border-b">
+                            <p class="text-xs text-gray-500"><span class="text-purple-500">●</span> PLAT PRINCIPAL</p>
+                            <p class="font-semibold">Couscous aux légumes</p>
+                            <p class="text-xs text-gray-400">+25 DH</p>
+                        </div>
+                        <div class="mb-2">
+                            <p class="text-xs text-gray-500"><span class="text-orange-400">●</span> DESSERT</p>
+                            <p class="font-semibold">Yaourt au miel</p>
+                            <p class="text-xs text-gray-400">+6 DH</p>
+                        </div> -->
+                    </div>
+
+                    <div class="bg-gray-100 p-4 flex justify-between items-center">
+                        <div>
+                            <p class="font-semibold">Total du jour</p>
+                            <!-- <p class="text-xs text-gray-500">12 DH restants</p> -->
+                        </div>
+                        <p class="text-2xl font-bold">0 <span class="text-xs font-normal text-gray-500">/ 50 DH</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-gray-200 border-t-4 border-t-green-500 overflow-hidden">
+                    <div class="p-4 border-b">
+                         <div class="flex items-center justify-between">
+                            <p class="text-xs text-gray-500">20 OCT.</p>
+                            <div class="flex justify-end gap-2">
+                            <button class="bg-white rounded-lg p-1 border border-green-300 "> Modifier</button>
+                            <button class="bg-white rounded-lg p-1 border border-red-500 ">Supprimer</button>
+                            </div>
+                        </div>
+                        <h2 class="text-xl font-bold">Mercredi</h2>
+                    </div>
+
+                    <div class="p-4">
+                        <div class="mb-4 pb-3 border-b">
+                    <p class="text-xs text-gray-500 mt-4"><span class="text-green-500">●</span> ENTRÉE</p>
+                    <select name="card" id="selection" class="w-full border border-slate-700 rounded-md p-2 ">
+                        <option value="selection">Choisir une entrée</option>
+                    </select>
+                    </div>
+                    <div class="mb-4 pb-3 border-b">
+                    <p class="text-xs text-gray-500"><span class="text-purple-500">●</span> PLAT PRINCIPAL</p>
+                    <select name="card" id="selection" class="w-full border border-slate-700 rounded-md p-2 ">
+                        <option value="selection">Choisir un plat principal</option>
+                    </select>
+                    </div>
+                    <p class="text-xs text-gray-500"><span class="text-orange-400">●</span> DESSERT</p>
+                   <select name="card" id="selection" class="w-full border border-slate-700 rounded-md p-2 ">
+                        <option value="selection">Choisir un dessert</option>
+                    </select>
+
+                        <!-- <div class="mb-4 pb-3 border-b">
+                            <p class="text-xs text-gray-500"><span class="text-green-500">●</span> ENTRÉE</p>
+                            <p class="font-semibold">Velouté de courgettes</p>
+                            <p class="text-xs text-gray-400">+6 DH</p>
+                        </div>
+                        <div class="mb-4 pb-3 border-b">
+                            <p class="text-xs text-gray-500"><span class="text-purple-500">●</span> PLAT PRINCIPAL</p>
+                            <p class="font-semibold">Tajine de poulet</p>
+                            <p class="text-xs text-gray-400">+27 DH</p>
+                        </div>
+                        <div class="mb-2">
+                            <p class="text-xs text-gray-500"><span class="text-orange-400">●</span> DESSERT</p>
+                            <p class="font-semibold">Fruits de saison</p>
+                            <p class="text-xs text-gray-400">+7 DH</p>
+                        </div> -->
+                    </div>
+
+                    <div class="bg-gray-100 p-4 flex justify-between items-center">
+                        <div>
+                            <p class="font-semibold">Total du jour</p>
+                            <!-- <p class="text-xs text-gray-500">10 DH restants</p> -->
+                        </div>
+                        <p class="text-2xl font-bold">0 <span class="text-xs font-normal text-gray-500">/ 50 DH</span>
+                        </p>
+                    </div>
+                </div>
+
                 
-                <div class="bg-gray-200 rounded-full h-1 w-full">
-                    <div class="bg-green-500 h-1 rounded-full w-2/5"></div>
+                <div class="bg-white rounded-2xl border border-gray-200 border-t-4 border-t-green-500 overflow-hidden">
+                    <div class="p-4 border-b">
+                        
+                        <div class="flex items-center justify-between">
+                            <p class="text-xs text-gray-500">20 OCT.</p>
+                            <div class="flex justify-end gap-2">
+                            <button class="bg-white rounded-lg p-1 border border-green-300 "> Modifier</button>
+                            <button class="bg-white rounded-lg p-1 border border-red-500 ">Supprimer</button>
+                            </div>
+                        </div>
+                        <h2 class="text-xl font-bold">Jeudi</h2>
+                    </div>
+
+                    <div class="p-4">
+                        <div class="mb-4 pb-3 border-b">
+                    <p class="text-xs text-gray-500 mt-4"><span class="text-green-500">●</span> ENTRÉE</p>
+                    <select name="card" id="selection" class="w-full border border-slate-700 rounded-md p-2 ">
+                        <option value="selection">Choisir une entrée</option>
+                    </select>
+                    </div>
+                    <div class="mb-4 pb-3 border-b">
+                    <p class="text-xs text-gray-500"><span class="text-purple-500">●</span> PLAT PRINCIPAL</p>
+                    <select name="card" id="selection" class="w-full border border-slate-700 rounded-md p-2 ">
+                        <option value="selection">Choisir un plat principal</option>
+                    </select>
+                    </div>
+                    <p class="text-xs text-gray-500"><span class="text-orange-400">●</span> DESSERT</p>
+                   <select name="card" id="selection" class="w-full border border-slate-700 rounded-md p-2 ">
+                        <option value="selection">Choisir un dessert</option>
+                    </select>
+                        <!-- <div class="mb-4 pb-3 border-b">
+                            <p class="text-xs text-gray-500"><span class="text-green-500">●</span> ENTRÉE</p>
+                            <p class="font-semibold">Salade marocaine</p>
+                            <p class="text-xs text-gray-400">+7 DH</p>
+                        </div>
+                        <div class="mb-4 pb-3 border-b">
+                            <p class="text-xs text-gray-500"><span class="text-purple-500">●</span> PLAT PRINCIPAL</p>
+                            <p class="font-semibold">Couscous aux légumes</p>
+                            <p class="text-xs text-gray-400">+25 DH</p>
+                        </div>
+                        <div class="mb-2">
+                            <p class="text-xs text-gray-500"><span class="text-orange-400">●</span> DESSERT</p>
+                            <p class="font-semibold">Yaourt au miel</p>
+                            <p class="text-xs text-gray-400">+6 DH</p>
+                        </div> -->
+                    </div>
+
+                    <div class="bg-gray-100 p-4 flex justify-between items-center">
+                        <div>
+                            <p class="font-semibold">Total du jour</p>
+                            <!-- <p class="text-xs text-gray-500">12 DH restants</p> -->
+                        </div>
+                        <p class="text-2xl font-bold">0 <span class="text-xs font-normal text-gray-500">/ 50 DH</span>
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </article>
- 
-        <article class="bg-white rounded-2xl shadow p-5 flex items-center gap-4">
-            <div class="bg-orange-100 rounded-xl w-12 h-12 flex items-center justify-center">👛</div>
+                <div class="bg-white rounded-2xl border border-gray-200 border-t-4 border-t-green-500 overflow-hidden">
+                    <div class="p-4 border-b">
+                         <div class="flex items-center justify-between">
+                            <p class="text-xs text-gray-500">20 OCT.</p>
+                            <div class="flex justify-end gap-2">
+                            <button class="bg-white rounded-lg p-1 border border-green-300 "> Modifier</button>
+                            <button class="bg-white rounded-lg p-1 border border-red-500 ">Supprimer</button>
+                            </div>
+                        </div>
+                        <h2 class="text-xl font-bold">Vendredi</h2>
+                    </div>
+
+                    <div class="p-4">
+                        <div class="mb-4 pb-3 border-b">
+                    <p class="text-xs text-gray-500 mt-4"><span class="text-green-500">●</span> ENTRÉE</p>
+                    <select name="card" id="selection" class="w-full border border-slate-700 rounded-md p-2 ">
+                        <option value="selection">Choisir une entrée</option>
+                    </select>
+                    </div>
+                    <div class="mb-4 pb-3 border-b">
+                    <p class="text-xs text-gray-500"><span class="text-purple-500">●</span> PLAT PRINCIPAL</p>
+                    <select name="card" id="selection" class="w-full border border-slate-700 rounded-md p-2 ">
+                        <option value="selection">Choisir un plat principal</option>
+                    </select>
+                    </div>
+                    <p class="text-xs text-gray-500"><span class="text-orange-400">●</span> DESSERT</p>
+                   <select name="card" id="selection" class="w-full border border-slate-700 rounded-md p-2 ">
+                        <option value="selection">Choisir un dessert</option>
+                    </select>
+                        <!-- <div class="mb-4 pb-3 border-b">
+                            <p class="text-xs text-gray-500"><span class="text-green-500">●</span> ENTRÉE</p>
+                            <p class="font-semibold">Velouté de courgettes</p>
+                            <p class="text-xs text-gray-400">+6 DH</p>
+                        </div>
+                        <div class="mb-4 pb-3 border-b">
+                            <p class="text-xs text-gray-500"><span class="text-purple-500">●</span> PLAT PRINCIPAL</p>
+                            <p class="font-semibold">Tajine de poulet</p>
+                            <p class="text-xs text-gray-400">+27 DH</p>
+                        </div>
+                        <div class="mb-2">
+                            <p class="text-xs text-gray-500"><span class="text-orange-400">●</span> DESSERT</p>
+                            <p class="font-semibold">Fruits de saison</p>
+                            <p class="text-xs text-gray-400">+7 DH</p>
+                        </div> -->
+                    </div>
+
+                    <div class="bg-gray-100 p-4 flex justify-between items-center">
+                        <div>
+                            <p class="font-semibold">Total du jour</p>
+                            <!-- <p class="text-xs text-gray-500">10 DH restants</p> -->
+                        </div>
+                        <p class="text-2xl font-bold">0 <span class="text-xs font-normal text-gray-500">/ 50 DH</span>
+                        </p>
+                    </div>
+                </div>
+
+    </main>
+    <section>
+
+
+        <div class="flex justify-between items-start mb-6">
             <div>
-                <span class="text-sm text-gray-500">Coût de la semaine</span>
-                <p><strong class="text-2xl">86</strong> <small class="text-gray-500">DH</small></p>
-                <h6 class="text-xs text-gray-400">par apprenant</h6>
+                <h2 class="text-3xl font-bold text-gray-900">
+                    Réserve de recettes
+                    <span
+                        class="bg-gray-200 text-gray-600 text-xs font-normal rounded-full px-2 py-1 align-middle">12</span>
+                </h2>
+                <p class="text-gray-500 mt-1">Votre garde-manger, prêt à enrichir la semaine.</p>
             </div>
-        </article>
- 
-        <article class="bg-white rounded-2xl shadow p-5 flex items-center gap-4">
-            <div class="bg-green-100 rounded-xl w-12 h-12 flex items-center justify-center">🌿</div>
-            <div class="flex-1">
-                <span class="text-sm text-gray-500">Équilibre alimentaire</span>
-                <p><strong class="text-xl">Équilibré</strong></p>
+            <button type="button" id="Ajouter"
+                class="bg-white border border-gray-200 hover:bg-gray-50 font-semibold px-5 py-3 rounded-xl"><i
+                    data-lucide="plus" class="w-4 h-4 inline"></i> + Nouvelle recette</button>
+        </div>
+
+
+        <div class="flex justify-between items-center mb-6">
+            <div class="relative w-80">
+                <i data-lucide="search" class="w-5 h-5 text-gray-400 absolute left-4 top-3.5"></i>
+                <input type="text" placeholder="Rechercher une recette..."
+                    class="bg-white border border-gray-200 rounded-xl pl-12 pr-4 py-3 w-full">
             </div>
-            <span class="text-green-500">●</span>
-        </article>
- 
+
+            <!-- <div class="flex gap-2">
+                <button class="bg-green-900 text-white font-semibold px-4 py-3 rounded-xl">Toutes</button>
+                <button class="text-gray-500 font-semibold px-4 py-3 rounded-xl hover:bg-white">Entrée</button>
+                <button class="text-gray-500 font-semibold px-4 py-3 rounded-xl hover:bg-white">Plats</button>
+                <button class="text-gray-500 font-semibold px-4 py-3 rounded-xl hover:bg-white">Dessert</button>
+            </div> -->
+        </div>
+
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+
+
+
+
+            <div class="bg-stone-100 border border-gray-200 rounded-2xl p-5 recipe-card opacity-50">
+                <div class="flex justify-between items-center">
+                    <span class="bg-green-100 text-green-700 text-xs font-bold rounded-full px-3 py-1">Entrée</span>
+                    <div class="flex gap-2">
+                        <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700"
+                            title="Modifier">
+                            <i data-lucide="pencil" class="w-4 h-4"></i>
+                        </button>
+                        <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600"
+                            title="Supprimer">
+                            <i data-lucide="trash-2" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+                <h3 class="text-xl font-semibold mt-4">Velouté de courgettes</h3>
+                <div class="flex justify-between items-center mt-4">
+                    <p class="text-xs text-gray-500"><span class="text-green-500">●</span> Bio</p>
+                    <p class="font-bold">6 DH</p>
+                </div>
+                <p class="text-xs text-gray-500 border-t mt-3 pt-3"><i data-lucide="check" class="w-3 h-3 inline"></i>
+                    Assigné : Lundi — Entrée</p>
+            </div>
+
+            <div class="bg-stone-100 border border-gray-200 rounded-2xl p-5 recipe-card opacity-50">
+                <div class="flex justify-between items-center">
+                    <span class="bg-green-100 text-green-700 text-xs font-bold rounded-full px-3 py-1">Entrée</span>
+                    <div class="flex gap-2">
+                        <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700"
+                            title="Modifier">
+                            <i data-lucide="pencil" class="w-4 h-4"></i>
+                        </button>
+                        <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600"
+                            title="Supprimer">
+                            <i data-lucide="trash-2" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+                <h3 class="text-xl font-semibold mt-4">Salade marocaine</h3>
+                <div class="flex justify-between items-center mt-4">
+                    <p class="text-xs text-gray-500"><span class="text-gray-400">●</span> Végétarien</p>
+                    <p class="font-bold">7 DH</p>
+                </div>
+                <p class="text-xs text-gray-500 border-t mt-3 pt-3"><i data-lucide="check" class="w-3 h-3 inline"></i>
+                    Assigné : Mardi — Entrée</p>
+            </div>
+
+            <div class="bg-stone-100 border border-gray-200 rounded-2xl p-5 recipe-card opacity-50">
+                <div class="flex justify-between items-center">
+                    <span class="bg-green-100 text-green-700 text-xs font-bold rounded-full px-3 py-1">Entrée</span>
+                    <div class="flex gap-2">
+                        <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700"
+                            title="Modifier">
+                            <i data-lucide="pencil" class="w-4 h-4"></i>
+                        </button>
+                        <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600"
+                            title="Supprimer">
+                            <i data-lucide="trash-2" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+                <h3 class="text-xl font-semibold mt-4">Zaalouk d'aubergines</h3>
+                <div class="flex justify-between items-center mt-4">
+                    <p class="text-xs text-gray-500"><span class="text-gray-400">●</span> Végétarien</p>
+                    <p class="font-bold">8 DH</p>
+                </div>
+                <p class="text-xs text-gray-500 border-t mt-3 pt-3"><i data-lucide="check" class="w-3 h-3 inline"></i>
+                    Assigné : Mercredi — Entrée</p>
+            </div>
+
+
+            <div class="bg-white border border-gray-200 rounded-2xl p-5 recipe-card">
+                <div class="flex justify-between items-center">
+                    <span class="bg-green-100 text-green-700 text-xs font-bold rounded-full px-3 py-1">Entrée</span>
+                    <div class="flex gap-2">
+                        <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700"
+                            title="Modifier">
+                            <i data-lucide="pencil" class="w-4 h-4"></i>
+                        </button>
+                        <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600"
+                            title="Supprimer">
+                            <i data-lucide="trash-2" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+                <h3 class="text-xl font-semibold mt-4">Harira légère</h3>
+                <div class="flex justify-between items-center mt-4">
+                    <p class="text-xs text-gray-500"><span class="text-gray-400">●</span> Classique</p>
+                    <p class="font-bold">9 DH</p>
+                </div>
+            </div>
+
+            <div class="bg-stone-100 border border-gray-200 rounded-2xl p-5 recipe-card opacity-50">
+                <div class="flex justify-between items-center">
+                    <span class="bg-purple-100 text-purple-700 text-xs font-bold rounded-full px-3 py-1">Plat
+                        principal</span>
+                    <div class="flex gap-2">
+                        <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700"
+                            title="Modifier">
+                            <i data-lucide="pencil" class="w-4 h-4"></i>
+                        </button>
+                        <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600"
+                            title="Supprimer">
+                            <i data-lucide="trash-2" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+                <h3 class="text-xl font-semibold mt-4">Tajine de poulet</h3>
+                <div class="flex justify-between items-center mt-4">
+                    <p class="text-xs text-gray-500"><span class="text-gray-400">●</span> Classique</p>
+                    <p class="font-bold">27 DH</p>
+                </div>
+                <p class="text-xs text-gray-500 border-t mt-3 pt-3"><i data-lucide="check" class="w-3 h-3 inline"></i>
+                    Assigné : Lundi — Plat principal</p>
+            </div>
+
+            <div class="bg-stone-100 border border-gray-200 rounded-2xl p-5 recipe-card opacity-50">
+                <div class="flex justify-between items-center">
+                    <span class="bg-purple-100 text-purple-700 text-xs font-bold rounded-full px-3 py-1">Plat
+                        principal</span>
+                    <div class="flex gap-2">
+                        <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700"
+                            title="Modifier">
+                            <i data-lucide="pencil" class="w-4 h-4"></i>
+                        </button>
+                        <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600"
+                            title="Supprimer">
+                            <i data-lucide="trash-2" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+                <h3 class="text-xl font-semibold mt-4">Couscous aux légumes</h3>
+                <div class="flex justify-between items-center mt-4">
+                    <p class="text-xs text-gray-500"><span class="text-gray-400">●</span> Végétarien</p>
+                    <p class="font-bold">25 DH</p>
+                </div>
+                <p class="text-xs text-gray-500 border-t mt-3 pt-3"><i data-lucide="check" class="w-3 h-3 inline"></i>
+                    Assigné : Mardi — Plat principal</p>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-2xl p-5 recipe-card">
+                <div class="flex justify-between items-center">
+                    <span class="bg-purple-100 text-purple-700 text-xs font-bold rounded-full px-3 py-1">Plat
+                        principal</span>
+                    <div class="flex gap-2">
+                        <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700"
+                            title="Modifier">
+                            <i data-lucide="pencil" class="w-4 h-4"></i>
+                        </button>
+                        <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600"
+                            title="Supprimer">
+                            <i data-lucide="trash-2" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+                <h3 class="text-xl font-semibold mt-4">Poisson à la chermoula</h3>
+                <div class="flex justify-between items-center mt-4">
+                    <p class="text-xs text-gray-500"><span class="text-green-500">●</span> Bio</p>
+                    <p class="font-bold">29 DH</p>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-2xl p-5 recipe-card">
+                <div class="flex justify-between items-center">
+                    <span class="bg-purple-100 text-purple-700 text-xs font-bold rounded-full px-3 py-1">Plat
+                        principal</span>
+                    <div class="flex gap-2">
+                        <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700"
+                            title="Modifier">
+                            <i data-lucide="pencil" class="w-4 h-4"></i>
+                        </button>
+                        <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600"
+                            title="Supprimer">
+                            <i data-lucide="trash-2" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+                <h3 class="text-xl font-semibold mt-4">Rfissa traditionnelle</h3>
+                <div class="flex justify-between items-center mt-4">
+                    <p class="text-xs text-gray-500"><span class="text-gray-400">●</span> Classique</p>
+                    <p class="font-bold">26 DH</p>
+                </div>
+            </div>
+
+
+            <div class="bg-stone-100 border border-gray-200 rounded-2xl p-5 recipe-card opacity-50">
+                <div class="flex justify-between items-center">
+                    <span class="bg-orange-100 text-orange-700 text-xs font-bold rounded-full px-3 py-1">Dessert</span>
+                    <div class="flex gap-2">
+                        <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700"
+                            title="Modifier">
+                            <i data-lucide="pencil" class="w-4 h-4"></i>
+                        </button>
+                        <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600"
+                            title="Supprimer">
+                            <i data-lucide="trash-2" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+                <h3 class="text-xl font-semibold mt-4">Fruits de saison</h3>
+                <div class="flex justify-between items-center mt-4">
+                    <p class="text-xs text-gray-500"><span class="text-green-500">●</span> Bio</p>
+                    <p class="font-bold">7 DH</p>
+                </div>
+                <p class="text-xs text-gray-500 border-t mt-3 pt-3"><i data-lucide="check" class="w-3 h-3 inline"></i>
+                    Assigné : Lundi — Dessert</p>
+            </div>
+
+            <div class="bg-stone-100 border border-gray-200 rounded-2xl p-5 recipe-card opacity-50">
+                <div class="flex justify-between items-center">
+                    <span class="bg-orange-100 text-orange-700 text-xs font-bold rounded-full px-3 py-1">Dessert</span>
+                    <div class="flex gap-2">
+                        <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700"
+                            title="Modifier">
+                            <i data-lucide="pencil" class="w-4 h-4"></i>
+                        </button>
+                        <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600"
+                            title="Supprimer">
+                            <i data-lucide="trash-2" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+                <h3 class="text-xl font-semibold mt-4">Yaourt au miel</h3>
+                <div class="flex justify-between items-center mt-4">
+                    <p class="text-xs text-gray-500"><span class="text-gray-400">●</span> Classique</p>
+                    <p class="font-bold">6 DH</p>
+                </div>
+                <p class="text-xs text-gray-500 border-t mt-3 pt-3"><i data-lucide="check" class="w-3 h-3 inline"></i>
+                    Assigné : Mardi — Dessert</p>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-2xl p-5 recipe-card">
+                <div class="flex justify-between items-center">
+                    <span class="bg-orange-100 text-orange-700 text-xs font-bold rounded-full px-3 py-1">Dessert</span>
+                    <div class="flex gap-2">
+                        <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700"
+                            title="Modifier">
+                            <i data-lucide="pencil" class="w-4 h-4"></i>
+                        </button>
+                        <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600"
+                            title="Supprimer">
+                            <i data-lucide="trash-2" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+                <h3 class="text-xl font-semibold mt-4">Salade d'oranges</h3>
+                <div class="flex justify-between items-center mt-4">
+                    <p class="text-xs text-gray-500"><span class="text-gray-400">●</span> Végétarien</p>
+                    <p class="font-bold">8 DH</p>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-2xl p-5 recipe-card">
+                <div class="flex justify-between items-center">
+                    <span class="bg-orange-100 text-orange-700 text-xs font-bold rounded-full px-3 py-1">Dessert</span>
+                    <div class="flex gap-2">
+                        <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700"
+                            title="Modifier">
+                            <i data-lucide="pencil" class="w-4 h-4"></i>
+                        </button>
+                        <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600"
+                            title="Supprimer">
+                            <i data-lucide="trash-2" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+                <h3 class="text-xl font-semibold mt-4">Flan maison</h3>
+                <div class="flex justify-between items-center mt-4">
+                    <p class="text-xs text-gray-500"><span class="text-gray-400">●</span> Classique</p>
+                    <p class="font-bold">7 DH</p>
+                </div>
+            </div>
+        </div>
     </section>
+    <form action="#" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center" id="popupdiv">
+            <div class="popup w-[440px] flex flex-col gap-4 p-6 rounded-xl bg-white shadow-xl">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-lg font-bold text-slate-900">Ajouter une recette</h3>
+                </div>
+                <div class="flex flex-col gap-1.5">
+                    <label for="#" class="text-sm font-semibold text-slate-700">Nom du plat *</label>
+                    <input type="text" required class="h-10 border border-slate-300 rounded-lg px-3 text-sm bg-white">
+                    <div class="flex justify-between">
+                    </div>
+                </div>
+                <div class="flex flex-col gap-1.5">
+                    <label for="#" class="text-sm font-semibold text-slate-700">Catégorie *</label>
+                    <select name="dessert" id="dessert-select"
+                        class="h-10 border border-slate-300 rounded-lg px-3 text-sm bg-white">
+                        <option value="">-- Choisissez un categorie --</option>
+                        <option value="fondant">Entrée</option>
+                        <option value="tarte">plat principal</option>
+                        <option value="glace">Dessert</option>
+                    </select>
+                </div>
+                <div class="flex flex-col gap-1.5">
+                    <label for="#" class="text-sm font-semibold text-slate-700">Prix (DH) *</label>
+                    <input type="number" placeholder="Ex:25" required
+                        class="h-10 border border-slate-300 rounded-lg px-3 text-sm bg-white">
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label for="#" class="text-sm font-semibold text-slate-700">Qualité</label>
+                    <div class="flex items-center gap-2">
+                        <input type="checkbox" class="w-4 h-4">
+                        <label class="text-sm">bio</label>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <input type="checkbox" class="w-4 h-4">
+                        <label class="text-sm">Végétarien</label>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <input type="checkbox" class="w-4 h-4">
+                        <label class="text-sm">Classique</label>
+                    </div>
+                </div>
+                <div class="flex justify-end gap-2.5">
+                    <button class="h-10 px-4 rounded-lg border border-slate-300 bg-white text-sm"
+                        id="Annuler">Annuler</button>
+                    <button
+                        class="h-10 px-4 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-sm font-semibold text-white">Ajouter</button>
+                </div>
+            </div>
+        </form>
 
-    <div class="section-hidden">
-        <div class="title.row">
-        <h2 class="text-2xl font-bold text-gray-900 mb-2">Menu de la semaine</h2>
-       
 
-    </div>
-    <div class="flex justify-between items-center mb-6">
-    <p class="text-gray-500">Glissez une recette ou sélectionnez-la dans chaque créneau.</p>
- 
-    <div class="flex gap-3">
-      <button class="bg-white px-4 py-2 rounded-lg shadow">Cartes</button>
-      <button class="px-4 py-2 rounded-lg text-gray-500">Tableau</button>
-      <button class="bg-green-100 text-green-800 px-4 py-2 rounded-full border border-green-300">Compléter la semaine</button>
-    </div>
-  </div>
-  <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
- 
-    <!--First card for monday-->
-    <div class="bg-white rounded-2xl border border-gray-200 border-t-4 border-t-green-500 overflow-hidden">
-      <div class="p-4 border-b">
-        <div class="flex justify-between">
-          <p class="text-xs text-gray-500">19 OCT.</p>
-          <span class="text-gray-400">...</span>
-        </div>
-        <h2 class="text-xl font-bold">Lundi</h2>
-      </div>
- 
-      <div class="p-4">
-        <div class="mb-4 pb-3 border-b">
-          <p class="text-xs text-gray-500"><span class="text-green-500">●</span> ENTRÉE</p>
-          <p class="font-semibold">Velouté de courgettes</p>
-          <p class="text-xs text-gray-400">+6 DH</p>
-        </div>
-        <div class="mb-4 pb-3 border-b">
-          <p class="text-xs text-gray-500"><span class="text-purple-500">●</span> PLAT PRINCIPAL</p>
-          <p class="font-semibold">Tajine de poulet</p>
-          <p class="text-xs text-gray-400">+27 DH</p>
-        </div>
-        <div class="mb-2">
-          <p class="text-xs text-gray-500"><span class="text-orange-400">●</span> DESSERT</p>
-          <p class="font-semibold">Fruits de saison</p>
-          <p class="text-xs text-gray-400">+7 DH</p>
-        </div>
-      </div>
- 
-      <div class="bg-gray-100 p-4 flex justify-between items-center">
-        <div>
-          <p class="font-semibold">Total du jour</p>
-          <p class="text-xs text-gray-500">10 DH restants</p>
-        </div>
-        <p class="text-2xl font-bold">40 <span class="text-xs font-normal text-gray-500">/ 50 DH</span></p>
-      </div>
-    </div>
-    
-    <div class="bg-white rounded-2xl border border-gray-200 border-t-4 border-t-green-500 overflow-hidden">
-      <div class="p-4 border-b">
-        <div class="flex justify-between">
-          <p class="text-xs text-gray-500">20 OCT.</p>
-          <span class="text-gray-400">...</span>
-        </div>
-        <h2 class="text-xl font-bold">Mardi</h2>
-      </div>
- 
-      <div class="p-4">
-        <div class="mb-4 pb-3 border-b">
-          <p class="text-xs text-gray-500"><span class="text-green-500">●</span> ENTRÉE</p>
-          <p class="font-semibold">Salade marocaine</p>
-          <p class="text-xs text-gray-400">+7 DH</p>
-        </div>
-        <div class="mb-4 pb-3 border-b">
-          <p class="text-xs text-gray-500"><span class="text-purple-500">●</span> PLAT PRINCIPAL</p>
-          <p class="font-semibold">Couscous aux légumes</p>
-          <p class="text-xs text-gray-400">+25 DH</p>
-        </div>
-        <div class="mb-2">
-          <p class="text-xs text-gray-500"><span class="text-orange-400">●</span> DESSERT</p>
-          <p class="font-semibold">Yaourt au miel</p>
-          <p class="text-xs text-gray-400">+6 DH</p>
-        </div>
-      </div>
- 
-      <div class="bg-gray-100 p-4 flex justify-between items-center">
-        <div>
-          <p class="font-semibold">Total du jour</p>
-          <p class="text-xs text-gray-500">12 DH restants</p>
-        </div>
-        <p class="text-2xl font-bold">38 <span class="text-xs font-normal text-gray-500">/ 50 DH</span></p>
-      </div>
-    </div>
-    
-    <div class="bg-white rounded-2xl border border-gray-200 border-t-4 border-t-green-500 overflow-hidden">
-      <div class="p-4 border-b">
-        <div class="flex justify-between">
-          <p class="text-xs text-gray-500">19 OCT.</p>
-          <span class="text-gray-400">...</span>
-        </div>
-        <h2 class="text-xl font-bold">Lundi</h2>
-      </div>
- 
-      <div class="p-4">
-        <div class="mb-4 pb-3 border-b">
-          <p class="text-xs text-gray-500"><span class="text-green-500">●</span> ENTRÉE</p>
-          <p class="font-semibold">Velouté de courgettes</p>
-          <p class="text-xs text-gray-400">+6 DH</p>
-        </div>
-        <div class="mb-4 pb-3 border-b">
-          <p class="text-xs text-gray-500"><span class="text-purple-500">●</span> PLAT PRINCIPAL</p>
-          <p class="font-semibold">Tajine de poulet</p>
-          <p class="text-xs text-gray-400">+27 DH</p>
-        </div>
-        <div class="mb-2">
-          <p class="text-xs text-gray-500"><span class="text-orange-400">●</span> DESSERT</p>
-          <p class="font-semibold">Fruits de saison</p>
-          <p class="text-xs text-gray-400">+7 DH</p>
-        </div>
-      </div>
- 
-      <div class="bg-gray-100 p-4 flex justify-between items-center">
-        <div>
-          <p class="font-semibold">Total du jour</p>
-          <p class="text-xs text-gray-500">10 DH restants</p>
-        </div>
-        <p class="text-2xl font-bold">40 <span class="text-xs font-normal text-gray-500">/ 50 DH</span></p>
-      </div>
-    </div>
- 
-    <!-- MARDI -->
-    <div class="bg-white rounded-2xl border border-gray-200 border-t-4 border-t-green-500 overflow-hidden">
-      <div class="p-4 border-b">
-        <div class="flex justify-between">
-          <p class="text-xs text-gray-500">20 OCT.</p>
-          <span class="text-gray-400">...</span>
-        </div>
-        <h2 class="text-xl font-bold">Mardi</h2>
-      </div>
- 
-      <div class="p-4">
-        <div class="mb-4 pb-3 border-b">
-          <p class="text-xs text-gray-500"><span class="text-green-500">●</span> ENTRÉE</p>
-          <p class="font-semibold">Salade marocaine</p>
-          <p class="text-xs text-gray-400">+7 DH</p>
-        </div>
-        <div class="mb-4 pb-3 border-b">
-          <p class="text-xs text-gray-500"><span class="text-purple-500">●</span> PLAT PRINCIPAL</p>
-          <p class="font-semibold">Couscous aux légumes</p>
-          <p class="text-xs text-gray-400">+25 DH</p>
-        </div>
-        <div class="mb-2">
-          <p class="text-xs text-gray-500"><span class="text-orange-400">●</span> DESSERT</p>
-          <p class="font-semibold">Yaourt au miel</p>
-          <p class="text-xs text-gray-400">+6 DH</p>
-        </div>
-      </div>
- 
-      <div class="bg-gray-100 p-4 flex justify-between items-center">
-        <div>
-          <p class="font-semibold">Total du jour</p>
-          <p class="text-xs text-gray-500">12 DH restants</p>
-        </div>
-        <p class="text-2xl font-bold">38 <span class="text-xs font-normal text-gray-500">/ 50 DH</span></p>
-      </div>
-    </div>
-     <div class="bg-white rounded-2xl border border-gray-200 border-t-4 border-t-green-500 overflow-hidden">
-      <div class="p-4 border-b">
-        <div class="flex justify-between">
-          <p class="text-xs text-gray-500">19 OCT.</p>
-          <span class="text-gray-400">...</span>
-        </div>
-        <h2 class="text-xl font-bold">Lundi</h2>
-      </div>
- 
-      <div class="p-4">
-        <div class="mb-4 pb-3 border-b">
-          <p class="text-xs text-gray-500"><span class="text-green-500">●</span> ENTRÉE</p>
-          <p class="font-semibold">Velouté de courgettes</p>
-          <p class="text-xs text-gray-400">+6 DH</p>
-        </div>
-        <div class="mb-4 pb-3 border-b">
-          <p class="text-xs text-gray-500"><span class="text-purple-500">●</span> PLAT PRINCIPAL</p>
-          <p class="font-semibold">Tajine de poulet</p>
-          <p class="text-xs text-gray-400">+27 DH</p>
-        </div>
-        <div class="mb-2">
-          <p class="text-xs text-gray-500"><span class="text-orange-400">●</span> DESSERT</p>
-          <p class="font-semibold">Fruits de saison</p>
-          <p class="text-xs text-gray-400">+7 DH</p>
-        </div>
-      </div>
- 
-      <div class="bg-gray-100 p-4 flex justify-between items-center">
-        <div>
-          <p class="font-semibold">Total du jour</p>
-          <p class="text-xs text-gray-500">10 DH restants</p>
-        </div>
-        <p class="text-2xl font-bold">40 <span class="text-xs font-normal text-gray-500">/ 50 DH</span></p>
-      </div>
-    </div>
-    
-</main>
-<section>
- 
-    
-    <div class="flex justify-between items-start mb-6">
-        <div>
-            <h2 class="text-3xl font-bold text-gray-900">
-                Réserve de recettes
-                <span class="bg-gray-200 text-gray-600 text-xs font-normal rounded-full px-2 py-1 align-middle">12</span>
-            </h2>
-            <p class="text-gray-500 mt-1">Votre garde-manger, prêt à enrichir la semaine.</p>
-        </div>
-        <button type="button" id="Ajouter" class="bg-white border border-gray-200 hover:bg-gray-50 font-semibold px-5 py-3 rounded-xl"><i data-lucide="plus" class="w-4 h-4 inline"></i> + Nouvelle recette</button>
-    </div>
- 
-    
-    <div class="flex justify-between items-center mb-6">
-        <div class="relative w-80">
-            <i data-lucide="search" class="w-5 h-5 text-gray-400 absolute left-4 top-3.5"></i>
-            <input type="text" placeholder="Rechercher une recette..." class="bg-white border border-gray-200 rounded-xl pl-12 pr-4 py-3 w-full">
-        </div>
- 
-        <div class="flex gap-2">
-            <button class="bg-green-900 text-white font-semibold px-4 py-3 rounded-xl">Toutes</button>
-            <button class="text-gray-500 font-semibold px-4 py-3 rounded-xl hover:bg-white">Entrée</button>
-            <button class="text-gray-500 font-semibold px-4 py-3 rounded-xl hover:bg-white">Plats</button>
-            <button class="text-gray-500 font-semibold px-4 py-3 rounded-xl hover:bg-white">Dessert</button>
-        </div>
-    </div>
- 
-    
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
- 
-        
- 
-        
-        <div class="bg-stone-100 border border-gray-200 rounded-2xl p-5 recipe-card opacity-50">
-            <div class="flex justify-between items-center">
-                <span class="bg-green-100 text-green-700 text-xs font-bold rounded-full px-3 py-1">Entrée</span>
-                <div class="flex gap-2">
-                    <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700" title="Modifier">
-                        <i data-lucide="pencil" class="w-4 h-4"></i>
-                    </button>
-                    <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600" title="Supprimer">
-                        <i data-lucide="trash-2" class="w-4 h-4"></i>
-                    </button>
-                </div>
-            </div>
-            <h3 class="text-xl font-semibold mt-4">Velouté de courgettes</h3>
-            <div class="flex justify-between items-center mt-4">
-                <p class="text-xs text-gray-500"><span class="text-green-500">●</span> Bio</p>
-                <p class="font-bold">6 DH</p>
-            </div>
-            <p class="text-xs text-gray-500 border-t mt-3 pt-3"><i data-lucide="check" class="w-3 h-3 inline"></i> Assigné : Lundi — Entrée</p>
-        </div>
- 
-        <div class="bg-stone-100 border border-gray-200 rounded-2xl p-5 recipe-card opacity-50">
-            <div class="flex justify-between items-center">
-                <span class="bg-green-100 text-green-700 text-xs font-bold rounded-full px-3 py-1">Entrée</span>
-                <div class="flex gap-2">
-                    <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700" title="Modifier">
-                        <i data-lucide="pencil" class="w-4 h-4"></i>
-                    </button>
-                    <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600" title="Supprimer">
-                        <i data-lucide="trash-2" class="w-4 h-4"></i>
-                    </button>
-                </div>
-            </div>
-            <h3 class="text-xl font-semibold mt-4">Salade marocaine</h3>
-            <div class="flex justify-between items-center mt-4">
-                <p class="text-xs text-gray-500"><span class="text-gray-400">●</span> Végétarien</p>
-                <p class="font-bold">7 DH</p>
-            </div>
-            <p class="text-xs text-gray-500 border-t mt-3 pt-3"><i data-lucide="check" class="w-3 h-3 inline"></i> Assigné : Mardi — Entrée</p>
-        </div>
- 
-        <div class="bg-stone-100 border border-gray-200 rounded-2xl p-5 recipe-card opacity-50">
-            <div class="flex justify-between items-center">
-                <span class="bg-green-100 text-green-700 text-xs font-bold rounded-full px-3 py-1">Entrée</span>
-                <div class="flex gap-2">
-                    <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700" title="Modifier">
-                        <i data-lucide="pencil" class="w-4 h-4"></i>
-                    </button>
-                    <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600" title="Supprimer">
-                        <i data-lucide="trash-2" class="w-4 h-4"></i>
-                    </button>
-                </div>
-            </div>
-            <h3 class="text-xl font-semibold mt-4">Zaalouk d'aubergines</h3>
-            <div class="flex justify-between items-center mt-4">
-                <p class="text-xs text-gray-500"><span class="text-gray-400">●</span> Végétarien</p>
-                <p class="font-bold">8 DH</p>
-            </div>
-            <p class="text-xs text-gray-500 border-t mt-3 pt-3"><i data-lucide="check" class="w-3 h-3 inline"></i> Assigné : Mercredi — Entrée</p>
-        </div>
- 
-        
-        <div class="bg-white border border-gray-200 rounded-2xl p-5 recipe-card">
-            <div class="flex justify-between items-center">
-                <span class="bg-green-100 text-green-700 text-xs font-bold rounded-full px-3 py-1">Entrée</span>
-                <div class="flex gap-2">
-                    <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700" title="Modifier">
-                        <i data-lucide="pencil" class="w-4 h-4"></i>
-                    </button>
-                    <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600" title="Supprimer">
-                        <i data-lucide="trash-2" class="w-4 h-4"></i>
-                    </button>
-                </div>
-            </div>
-            <h3 class="text-xl font-semibold mt-4">Harira légère</h3>
-            <div class="flex justify-between items-center mt-4">
-                <p class="text-xs text-gray-500"><span class="text-gray-400">●</span> Classique</p>
-                <p class="font-bold">9 DH</p>
-            </div>
-        </div>
- 
-        <div class="bg-stone-100 border border-gray-200 rounded-2xl p-5 recipe-card opacity-50">
-            <div class="flex justify-between items-center">
-                <span class="bg-purple-100 text-purple-700 text-xs font-bold rounded-full px-3 py-1">Plat principal</span>
-                <div class="flex gap-2">
-                    <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700" title="Modifier">
-                        <i data-lucide="pencil" class="w-4 h-4"></i>
-                    </button>
-                    <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600" title="Supprimer">
-                        <i data-lucide="trash-2" class="w-4 h-4"></i>
-                    </button>
-                </div>
-            </div>
-            <h3 class="text-xl font-semibold mt-4">Tajine de poulet</h3>
-            <div class="flex justify-between items-center mt-4">
-                <p class="text-xs text-gray-500"><span class="text-gray-400">●</span> Classique</p>
-                <p class="font-bold">27 DH</p>
-            </div>
-            <p class="text-xs text-gray-500 border-t mt-3 pt-3"><i data-lucide="check" class="w-3 h-3 inline"></i> Assigné : Lundi — Plat principal</p>
-        </div>
- 
-        <div class="bg-stone-100 border border-gray-200 rounded-2xl p-5 recipe-card opacity-50">
-            <div class="flex justify-between items-center">
-                <span class="bg-purple-100 text-purple-700 text-xs font-bold rounded-full px-3 py-1">Plat principal</span>
-                <div class="flex gap-2">
-                    <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700" title="Modifier">
-                        <i data-lucide="pencil" class="w-4 h-4"></i>
-                    </button>
-                    <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600" title="Supprimer">
-                        <i data-lucide="trash-2" class="w-4 h-4"></i>
-                    </button>
-                </div>
-            </div>
-            <h3 class="text-xl font-semibold mt-4">Couscous aux légumes</h3>
-            <div class="flex justify-between items-center mt-4">
-                <p class="text-xs text-gray-500"><span class="text-gray-400">●</span> Végétarien</p>
-                <p class="font-bold">25 DH</p>
-            </div>
-            <p class="text-xs text-gray-500 border-t mt-3 pt-3"><i data-lucide="check" class="w-3 h-3 inline"></i> Assigné : Mardi — Plat principal</p>
-        </div>
- 
-        <div class="bg-white border border-gray-200 rounded-2xl p-5 recipe-card">
-            <div class="flex justify-between items-center">
-                <span class="bg-purple-100 text-purple-700 text-xs font-bold rounded-full px-3 py-1">Plat principal</span>
-                <div class="flex gap-2">
-                    <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700" title="Modifier">
-                        <i data-lucide="pencil" class="w-4 h-4"></i>
-                    </button>
-                    <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600" title="Supprimer">
-                        <i data-lucide="trash-2" class="w-4 h-4"></i>
-                    </button>
-                </div>
-            </div>
-            <h3 class="text-xl font-semibold mt-4">Poisson à la chermoula</h3>
-            <div class="flex justify-between items-center mt-4">
-                <p class="text-xs text-gray-500"><span class="text-green-500">●</span> Bio</p>
-                <p class="font-bold">29 DH</p>
-            </div>
-        </div>
- 
-        <div class="bg-white border border-gray-200 rounded-2xl p-5 recipe-card">
-            <div class="flex justify-between items-center">
-                <span class="bg-purple-100 text-purple-700 text-xs font-bold rounded-full px-3 py-1">Plat principal</span>
-                <div class="flex gap-2">
-                    <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700" title="Modifier">
-                        <i data-lucide="pencil" class="w-4 h-4"></i>
-                    </button>
-                    <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600" title="Supprimer">
-                        <i data-lucide="trash-2" class="w-4 h-4"></i>
-                    </button>
-                </div>
-            </div>
-            <h3 class="text-xl font-semibold mt-4">Rfissa traditionnelle</h3>
-            <div class="flex justify-between items-center mt-4">
-                <p class="text-xs text-gray-500"><span class="text-gray-400">●</span> Classique</p>
-                <p class="font-bold">26 DH</p>
-            </div>
-        </div>
- 
- 
-        <div class="bg-stone-100 border border-gray-200 rounded-2xl p-5 recipe-card opacity-50">
-            <div class="flex justify-between items-center">
-                <span class="bg-orange-100 text-orange-700 text-xs font-bold rounded-full px-3 py-1">Dessert</span>
-                <div class="flex gap-2">
-                    <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700" title="Modifier">
-                        <i data-lucide="pencil" class="w-4 h-4"></i>
-                    </button>
-                    <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600" title="Supprimer">
-                        <i data-lucide="trash-2" class="w-4 h-4"></i>
-                    </button>
-                </div>
-            </div>
-            <h3 class="text-xl font-semibold mt-4">Fruits de saison</h3>
-            <div class="flex justify-between items-center mt-4">
-                <p class="text-xs text-gray-500"><span class="text-green-500">●</span> Bio</p>
-                <p class="font-bold">7 DH</p>
-            </div>
-            <p class="text-xs text-gray-500 border-t mt-3 pt-3"><i data-lucide="check" class="w-3 h-3 inline"></i> Assigné : Lundi — Dessert</p>
-        </div>
- 
-        <div class="bg-stone-100 border border-gray-200 rounded-2xl p-5 recipe-card opacity-50">
-            <div class="flex justify-between items-center">
-                <span class="bg-orange-100 text-orange-700 text-xs font-bold rounded-full px-3 py-1">Dessert</span>
-                <div class="flex gap-2">
-                    <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700" title="Modifier">
-                        <i data-lucide="pencil" class="w-4 h-4"></i>
-                    </button>
-                    <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600" title="Supprimer">
-                        <i data-lucide="trash-2" class="w-4 h-4"></i>
-                    </button>
-                </div>
-            </div>
-            <h3 class="text-xl font-semibold mt-4">Yaourt au miel</h3>
-            <div class="flex justify-between items-center mt-4">
-                <p class="text-xs text-gray-500"><span class="text-gray-400">●</span> Classique</p>
-                <p class="font-bold">6 DH</p>
-            </div>
-            <p class="text-xs text-gray-500 border-t mt-3 pt-3"><i data-lucide="check" class="w-3 h-3 inline"></i> Assigné : Mardi — Dessert</p>
-        </div>
- 
-        <div class="bg-white border border-gray-200 rounded-2xl p-5 recipe-card">
-            <div class="flex justify-between items-center">
-                <span class="bg-orange-100 text-orange-700 text-xs font-bold rounded-full px-3 py-1">Dessert</span>
-                <div class="flex gap-2">
-                    <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700" title="Modifier">
-                        <i data-lucide="pencil" class="w-4 h-4"></i>
-                    </button>
-                    <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600" title="Supprimer">
-                        <i data-lucide="trash-2" class="w-4 h-4"></i>
-                    </button>
-                </div>
-            </div>
-            <h3 class="text-xl font-semibold mt-4">Salade d'oranges</h3>
-            <div class="flex justify-between items-center mt-4">
-                <p class="text-xs text-gray-500"><span class="text-gray-400">●</span> Végétarien</p>
-                <p class="font-bold">8 DH</p>
-            </div>
-        </div>
- 
-        <div class="bg-white border border-gray-200 rounded-2xl p-5 recipe-card">
-            <div class="flex justify-between items-center">
-                <span class="bg-orange-100 text-orange-700 text-xs font-bold rounded-full px-3 py-1">Dessert</span>
-                <div class="flex gap-2">
-                    <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700" title="Modifier">
-                        <i data-lucide="pencil" class="w-4 h-4"></i>
-                    </button>
-                    <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600" title="Supprimer">
-                        <i data-lucide="trash-2" class="w-4 h-4"></i>
-                    </button>
-                </div>
-            </div>
-            <h3 class="text-xl font-semibold mt-4">Flan maison</h3>
-            <div class="flex justify-between items-center mt-4">
-                <p class="text-xs text-gray-500"><span class="text-gray-400">●</span> Classique</p>
-                <p class="font-bold">7 DH</p>
-            </div>
-        </div>
- 
-    </div>
-</section>
-<div id="modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/50 p-4">
-  <div class="w-full max-w-md rounded-2xl bg-white p-6 text-stone-900">
-    <h2 class="text-xl font-bold">Nouvelle recette</h2>
-    <p class="text-sm text-stone-500">Renseignez les informations du plat.</p>
-  </div>
-</div>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
-</html>
+
+</html> 
