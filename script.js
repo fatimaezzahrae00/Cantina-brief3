@@ -1,7 +1,13 @@
-const btnAjouter = document.getElementById('Ajouter');
-const modal = document.getElementById('modal');
+const button = document.getElementById('Ajouter');
+const popup = document.getElementById('popupdiv');
+const annuler = document.getElementById('Annuler');
 
-btnAjouter.addEventListener('click', () => {
-  modal.classList.remove('hidden');
-  modal.classList.add('flex');
-});
+function showPopup() {
+    popup.classList.remove('hidden');
+}
+function annulerPopup() {
+    popup.classList.add('hidden');
+}
+
+button.addEventListener('click', showPopup);
+annuler.addEventListener('click', annulerPopup);
