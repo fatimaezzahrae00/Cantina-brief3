@@ -92,10 +92,7 @@
                     <div class="p-4 border-b">
                          <div class="flex items-center justify-between">
                             <p class="text-xs text-gray-500">20 OCT.</p>
-                            <div class="flex justify-end gap-2">
-                            <button class="bg-white rounded-lg p-1 border border-green-300 "> Modifier</button>
-                            <button class="bg-white rounded-lg p-1 border border-red-500 ">Supprimer</button>
-                            </div>
+        
                         </div>
                         <h2 class="text-xl font-bold">Lundi</h2>
                     </div>
@@ -150,10 +147,7 @@
                     <div class="p-4 border-b">
                          <div class="flex items-center justify-between">
                             <p class="text-xs text-gray-500">20 OCT.</p>
-                            <div class="flex justify-end gap-2">
-                            <button class="bg-white rounded-lg p-1 border border-green-300 "> Modifier</button>
-                            <button class="bg-white rounded-lg p-1 border border-red-500 ">Supprimer</button>
-                            </div>
+                            
                         </div>
                         <h2 class="text-xl font-bold">Mardi</h2>
                     </div>
@@ -207,10 +201,7 @@
                     <div class="p-4 border-b">
                          <div class="flex items-center justify-between">
                             <p class="text-xs text-gray-500">20 OCT.</p>
-                            <div class="flex justify-end gap-2">
-                            <button class="bg-white rounded-lg p-1 border border-green-300 "> Modifier</button>
-                            <button class="bg-white rounded-lg p-1 border border-red-500 ">Supprimer</button>
-                            </div>
+                            
                         </div>
                         <h2 class="text-xl font-bold">Mercredi</h2>
                     </div>
@@ -266,14 +257,11 @@
                         
                         <div class="flex items-center justify-between">
                             <p class="text-xs text-gray-500">20 OCT.</p>
-                            <div class="flex justify-end gap-2">
-                            <button class="bg-white rounded-lg p-1 border border-green-300 "> Modifier</button>
-                            <button class="bg-white rounded-lg p-1 border border-red-500 ">Supprimer</button>
-                            </div>
+                    
                         </div>
                         <h2 class="text-xl font-bold">Jeudi</h2>
                     </div>
-
+                    
                     <div class="p-4">
                         <div class="mb-4 pb-3 border-b">
                     <p class="text-xs text-gray-500 mt-4"><span class="text-green-500">●</span> ENTRÉE</p>
@@ -321,10 +309,7 @@
                     <div class="p-4 border-b">
                          <div class="flex items-center justify-between">
                             <p class="text-xs text-gray-500">20 OCT.</p>
-                            <div class="flex justify-end gap-2">
-                            <button class="bg-white rounded-lg p-1 border border-green-300 "> Modifier</button>
-                            <button class="bg-white rounded-lg p-1 border border-red-500 ">Supprimer</button>
-                            </div>
+                            
                         </div>
                         <h2 class="text-xl font-bold">Vendredi</h2>
                     </div>
@@ -393,11 +378,11 @@
 
 
         <div class="flex justify-between items-center mb-6">
-            <div class="relative w-80">
+            <!-- <div class="relative w-80">
                 <i data-lucide="search" class="w-5 h-5 text-gray-400 absolute left-4 top-3.5"></i>
                 <input type="text" placeholder="Rechercher une recette..."
                     class="bg-white border border-gray-200 rounded-xl pl-12 pr-4 py-3 w-full">
-            </div>
+            </div> -->
 
             <!-- <div class="flex gap-2">
                 <button class="bg-green-900 text-white font-semibold px-4 py-3 rounded-xl">Toutes</button>
@@ -408,282 +393,10 @@
         </div>
 
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div id="listR" class=" bg-red-500 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
 
 
 
-
-            <div class="bg-stone-100 border border-gray-200 rounded-2xl p-5 recipe-card opacity-50">
-                <div class="flex justify-between items-center">
-                    <span class="bg-green-100 text-green-700 text-xs font-bold rounded-full px-3 py-1">Entrée</span>
-                    <div class="flex gap-2">
-                        <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700"
-                            title="Modifier">
-                            <i data-lucide="pencil" class="w-4 h-4"></i>
-                        </button>
-                        <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600"
-                            title="Supprimer">
-                            <i data-lucide="trash-2" class="w-4 h-4"></i>
-                        </button>
-                    </div>
-                </div>
-                <h3 class="text-xl font-semibold mt-4">Velouté de courgettes</h3>
-                <div class="flex justify-between items-center mt-4">
-                    <p class="text-xs text-gray-500"><span class="text-green-500">●</span> Bio</p>
-                    <p class="font-bold">6 DH</p>
-                </div>
-                <p class="text-xs text-gray-500 border-t mt-3 pt-3"><i data-lucide="check" class="w-3 h-3 inline"></i>
-                    Assigné : Lundi — Entrée</p>
-            </div>
-
-            <div class="bg-stone-100 border border-gray-200 rounded-2xl p-5 recipe-card opacity-50">
-                <div class="flex justify-between items-center">
-                    <span class="bg-green-100 text-green-700 text-xs font-bold rounded-full px-3 py-1">Entrée</span>
-                    <div class="flex gap-2">
-                        <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700"
-                            title="Modifier">
-                            <i data-lucide="pencil" class="w-4 h-4"></i>
-                        </button>
-                        <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600"
-                            title="Supprimer">
-                            <i data-lucide="trash-2" class="w-4 h-4"></i>
-                        </button>
-                    </div>
-                </div>
-                <h3 class="text-xl font-semibold mt-4">Salade marocaine</h3>
-                <div class="flex justify-between items-center mt-4">
-                    <p class="text-xs text-gray-500"><span class="text-gray-400">●</span> Végétarien</p>
-                    <p class="font-bold">7 DH</p>
-                </div>
-                <p class="text-xs text-gray-500 border-t mt-3 pt-3"><i data-lucide="check" class="w-3 h-3 inline"></i>
-                    Assigné : Mardi — Entrée</p>
-            </div>
-
-            <div class="bg-stone-100 border border-gray-200 rounded-2xl p-5 recipe-card opacity-50">
-                <div class="flex justify-between items-center">
-                    <span class="bg-green-100 text-green-700 text-xs font-bold rounded-full px-3 py-1">Entrée</span>
-                    <div class="flex gap-2">
-                        <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700"
-                            title="Modifier">
-                            <i data-lucide="pencil" class="w-4 h-4"></i>
-                        </button>
-                        <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600"
-                            title="Supprimer">
-                            <i data-lucide="trash-2" class="w-4 h-4"></i>
-                        </button>
-                    </div>
-                </div>
-                <h3 class="text-xl font-semibold mt-4">Zaalouk d'aubergines</h3>
-                <div class="flex justify-between items-center mt-4">
-                    <p class="text-xs text-gray-500"><span class="text-gray-400">●</span> Végétarien</p>
-                    <p class="font-bold">8 DH</p>
-                </div>
-                <p class="text-xs text-gray-500 border-t mt-3 pt-3"><i data-lucide="check" class="w-3 h-3 inline"></i>
-                    Assigné : Mercredi — Entrée</p>
-            </div>
-
-
-            <div class="bg-white border border-gray-200 rounded-2xl p-5 recipe-card">
-                <div class="flex justify-between items-center">
-                    <span class="bg-green-100 text-green-700 text-xs font-bold rounded-full px-3 py-1">Entrée</span>
-                    <div class="flex gap-2">
-                        <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700"
-                            title="Modifier">
-                            <i data-lucide="pencil" class="w-4 h-4"></i>
-                        </button>
-                        <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600"
-                            title="Supprimer">
-                            <i data-lucide="trash-2" class="w-4 h-4"></i>
-                        </button>
-                    </div>
-                </div>
-                <h3 class="text-xl font-semibold mt-4">Harira légère</h3>
-                <div class="flex justify-between items-center mt-4">
-                    <p class="text-xs text-gray-500"><span class="text-gray-400">●</span> Classique</p>
-                    <p class="font-bold">9 DH</p>
-                </div>
-            </div>
-
-            <div class="bg-stone-100 border border-gray-200 rounded-2xl p-5 recipe-card opacity-50">
-                <div class="flex justify-between items-center">
-                    <span class="bg-purple-100 text-purple-700 text-xs font-bold rounded-full px-3 py-1">Plat
-                        principal</span>
-                    <div class="flex gap-2">
-                        <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700"
-                            title="Modifier">
-                            <i data-lucide="pencil" class="w-4 h-4"></i>
-                        </button>
-                        <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600"
-                            title="Supprimer">
-                            <i data-lucide="trash-2" class="w-4 h-4"></i>
-                        </button>
-                    </div>
-                </div>
-                <h3 class="text-xl font-semibold mt-4">Tajine de poulet</h3>
-                <div class="flex justify-between items-center mt-4">
-                    <p class="text-xs text-gray-500"><span class="text-gray-400">●</span> Classique</p>
-                    <p class="font-bold">27 DH</p>
-                </div>
-                <p class="text-xs text-gray-500 border-t mt-3 pt-3"><i data-lucide="check" class="w-3 h-3 inline"></i>
-                    Assigné : Lundi — Plat principal</p>
-            </div>
-
-            <div class="bg-stone-100 border border-gray-200 rounded-2xl p-5 recipe-card opacity-50">
-                <div class="flex justify-between items-center">
-                    <span class="bg-purple-100 text-purple-700 text-xs font-bold rounded-full px-3 py-1">Plat
-                        principal</span>
-                    <div class="flex gap-2">
-                        <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700"
-                            title="Modifier">
-                            <i data-lucide="pencil" class="w-4 h-4"></i>
-                        </button>
-                        <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600"
-                            title="Supprimer">
-                            <i data-lucide="trash-2" class="w-4 h-4"></i>
-                        </button>
-                    </div>
-                </div>
-                <h3 class="text-xl font-semibold mt-4">Couscous aux légumes</h3>
-                <div class="flex justify-between items-center mt-4">
-                    <p class="text-xs text-gray-500"><span class="text-gray-400">●</span> Végétarien</p>
-                    <p class="font-bold">25 DH</p>
-                </div>
-                <p class="text-xs text-gray-500 border-t mt-3 pt-3"><i data-lucide="check" class="w-3 h-3 inline"></i>
-                    Assigné : Mardi — Plat principal</p>
-            </div>
-
-            <div class="bg-white border border-gray-200 rounded-2xl p-5 recipe-card">
-                <div class="flex justify-between items-center">
-                    <span class="bg-purple-100 text-purple-700 text-xs font-bold rounded-full px-3 py-1">Plat
-                        principal</span>
-                    <div class="flex gap-2">
-                        <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700"
-                            title="Modifier">
-                            <i data-lucide="pencil" class="w-4 h-4"></i>
-                        </button>
-                        <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600"
-                            title="Supprimer">
-                            <i data-lucide="trash-2" class="w-4 h-4"></i>
-                        </button>
-                    </div>
-                </div>
-                <h3 class="text-xl font-semibold mt-4">Poisson à la chermoula</h3>
-                <div class="flex justify-between items-center mt-4">
-                    <p class="text-xs text-gray-500"><span class="text-green-500">●</span> Bio</p>
-                    <p class="font-bold">29 DH</p>
-                </div>
-            </div>
-
-            <div class="bg-white border border-gray-200 rounded-2xl p-5 recipe-card">
-                <div class="flex justify-between items-center">
-                    <span class="bg-purple-100 text-purple-700 text-xs font-bold rounded-full px-3 py-1">Plat
-                        principal</span>
-                    <div class="flex gap-2">
-                        <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700"
-                            title="Modifier">
-                            <i data-lucide="pencil" class="w-4 h-4"></i>
-                        </button>
-                        <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600"
-                            title="Supprimer">
-                            <i data-lucide="trash-2" class="w-4 h-4"></i>
-                        </button>
-                    </div>
-                </div>
-                <h3 class="text-xl font-semibold mt-4">Rfissa traditionnelle</h3>
-                <div class="flex justify-between items-center mt-4">
-                    <p class="text-xs text-gray-500"><span class="text-gray-400">●</span> Classique</p>
-                    <p class="font-bold">26 DH</p>
-                </div>
-            </div>
-
-
-            <div class="bg-stone-100 border border-gray-200 rounded-2xl p-5 recipe-card opacity-50">
-                <div class="flex justify-between items-center">
-                    <span class="bg-orange-100 text-orange-700 text-xs font-bold rounded-full px-3 py-1">Dessert</span>
-                    <div class="flex gap-2">
-                        <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700"
-                            title="Modifier">
-                            <i data-lucide="pencil" class="w-4 h-4"></i>
-                        </button>
-                        <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600"
-                            title="Supprimer">
-                            <i data-lucide="trash-2" class="w-4 h-4"></i>
-                        </button>
-                    </div>
-                </div>
-                <h3 class="text-xl font-semibold mt-4">Fruits de saison</h3>
-                <div class="flex justify-between items-center mt-4">
-                    <p class="text-xs text-gray-500"><span class="text-green-500">●</span> Bio</p>
-                    <p class="font-bold">7 DH</p>
-                </div>
-                <p class="text-xs text-gray-500 border-t mt-3 pt-3"><i data-lucide="check" class="w-3 h-3 inline"></i>
-                    Assigné : Lundi — Dessert</p>
-            </div>
-
-            <div class="bg-stone-100 border border-gray-200 rounded-2xl p-5 recipe-card opacity-50">
-                <div class="flex justify-between items-center">
-                    <span class="bg-orange-100 text-orange-700 text-xs font-bold rounded-full px-3 py-1">Dessert</span>
-                    <div class="flex gap-2">
-                        <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700"
-                            title="Modifier">
-                            <i data-lucide="pencil" class="w-4 h-4"></i>
-                        </button>
-                        <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600"
-                            title="Supprimer">
-                            <i data-lucide="trash-2" class="w-4 h-4"></i>
-                        </button>
-                    </div>
-                </div>
-                <h3 class="text-xl font-semibold mt-4">Yaourt au miel</h3>
-                <div class="flex justify-between items-center mt-4">
-                    <p class="text-xs text-gray-500"><span class="text-gray-400">●</span> Classique</p>
-                    <p class="font-bold">6 DH</p>
-                </div>
-                <p class="text-xs text-gray-500 border-t mt-3 pt-3"><i data-lucide="check" class="w-3 h-3 inline"></i>
-                    Assigné : Mardi — Dessert</p>
-            </div>
-
-            <div class="bg-white border border-gray-200 rounded-2xl p-5 recipe-card">
-                <div class="flex justify-between items-center">
-                    <span class="bg-orange-100 text-orange-700 text-xs font-bold rounded-full px-3 py-1">Dessert</span>
-                    <div class="flex gap-2">
-                        <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700"
-                            title="Modifier">
-                            <i data-lucide="pencil" class="w-4 h-4"></i>
-                        </button>
-                        <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600"
-                            title="Supprimer">
-                            <i data-lucide="trash-2" class="w-4 h-4"></i>
-                        </button>
-                    </div>
-                </div>
-                <h3 class="text-xl font-semibold mt-4">Salade d'oranges</h3>
-                <div class="flex justify-between items-center mt-4">
-                    <p class="text-xs text-gray-500"><span class="text-gray-400">●</span> Végétarien</p>
-                    <p class="font-bold">8 DH</p>
-                </div>
-            </div>
-
-            <div class="bg-white border border-gray-200 rounded-2xl p-5 recipe-card">
-                <div class="flex justify-between items-center">
-                    <span class="bg-orange-100 text-orange-700 text-xs font-bold rounded-full px-3 py-1">Dessert</span>
-                    <div class="flex gap-2">
-                        <button class="btn-edit p-2 rounded-lg text-gray-500 hover:bg-green-100 hover:text-green-700"
-                            title="Modifier">
-                            <i data-lucide="pencil" class="w-4 h-4"></i>
-                        </button>
-                        <button class="btn-delete p-2 rounded-lg text-gray-500 hover:bg-red-100 hover:text-red-600"
-                            title="Supprimer">
-                            <i data-lucide="trash-2" class="w-4 h-4"></i>
-                        </button>
-                    </div>
-                </div>
-                <h3 class="text-xl font-semibold mt-4">Flan maison</h3>
-                <div class="flex justify-between items-center mt-4">
-                    <p class="text-xs text-gray-500"><span class="text-gray-400">●</span> Classique</p>
-                    <p class="font-bold">7 DH</p>
-                </div>
-            </div>
         </div>
     </section>
     <form action="#" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center" id="popupdiv">
@@ -737,7 +450,7 @@
         </form>
 
 
-    <script src="script.js"></script>
+    <script type="module" src="./script.js"></script>
 </body>
 
 </html> 
