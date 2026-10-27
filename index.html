@@ -399,55 +399,44 @@
 
         </div>
     </section>
-    <form action="#" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center" id="popupdiv">
-            <div class="popup w-[440px] flex flex-col gap-4 p-6 rounded-xl bg-white shadow-xl">
-                <div class="flex justify-between items-center">
-                    <h3 class="text-lg font-bold text-slate-900">Ajouter une recette</h3>
-                </div>
-                <div class="flex flex-col gap-1.5">
-                    <label for="#" class="text-sm font-semibold text-slate-700">Nom du plat *</label>
-                    <input type="text" required class="h-10 border border-slate-300 rounded-lg px-3 text-sm bg-white">
-                    <div class="flex justify-between">
-                    </div>
-                </div>
-                <div class="flex flex-col gap-1.5">
-                    <label for="#" class="text-sm font-semibold text-slate-700">Catégorie *</label>
-                    <select name="dessert" id="dessert-select"
-                        class="h-10 border border-slate-300 rounded-lg px-3 text-sm bg-white">
-                        <option value="">-- Choisissez un categorie --</option>
-                        <option value="fondant">Entrée</option>
-                        <option value="tarte">plat principal</option>
-                        <option value="glace">Dessert</option>
-                    </select>
-                </div>
-                <div class="flex flex-col gap-1.5">
-                    <label for="#" class="text-sm font-semibold text-slate-700">Prix (DH) *</label>
-                    <input type="number" placeholder="Ex:25" required
-                        class="h-10 border border-slate-300 rounded-lg px-3 text-sm bg-white">
-                </div>
-                <div class="flex flex-col gap-2">
-                    <label for="#" class="text-sm font-semibold text-slate-700">Qualité</label>
-                    <div class="flex items-center gap-2">
-                        <input type="checkbox" class="w-4 h-4">
-                        <label class="text-sm">bio</label>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <input type="checkbox" class="w-4 h-4">
-                        <label class="text-sm">Végétarien</label>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <input type="checkbox" class="w-4 h-4">
-                        <label class="text-sm">Classique</label>
-                    </div>
-                </div>
-                <div class="flex justify-end gap-2.5">
-                    <button class="h-10 px-4 rounded-lg border border-slate-300 bg-white text-sm"
-                        id="Annuler">Annuler</button>
-                    <button
-                        class="h-10 px-4 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-sm font-semibold text-white">Ajouter</button>
-                </div>
-            </div>
-        </form>
+    <form id="recetteForm" class="hidden fixed inset-0 bg-black/50 items-center justify-center">
+  <div class="popup w-[440px] flex flex-col gap-4 p-6 rounded-xl bg-white shadow-xl">
+    <h3 class="text-lg font-bold text-slate-900">Ajouter une recette</h3>
+
+    <div class="flex flex-col gap-1.5">
+      <label for="nom" class="text-sm font-semibold text-slate-700">Nom du plat *</label>
+      <input id="nom" type="text" name="nom" required class="h-10 border border-slate-300 rounded-lg px-3 text-sm bg-white">
+    </div>
+
+    <div class="flex flex-col gap-1.5">
+      <label for="categorie" class="text-sm font-semibold text-slate-700">Catégorie *</label>
+      <select id="categorie" name="categorie" required class="h-10 border border-slate-300 rounded-lg px-3 text-sm bg-white">
+        <option value="">-- Choisissez une catégorie --</option>
+        <option value="Entrée">Entrée</option>
+        <option value="Plat principal">Plat principal</option>
+        <option value="Dessert">Dessert</option>
+      </select>
+    </div>
+
+    <div class="flex flex-col gap-1.5">
+      <label for="prix" class="text-sm font-semibold text-slate-700">Prix (DH) *</label>
+      <input id="prix" name="prix" type="number" min="0" placeholder="Ex: 25" required
+             class="h-10 border border-slate-300 rounded-lg px-3 text-sm bg-white">
+    </div>
+
+    <div class="flex flex-col gap-2">
+      <span class="text-sm font-semibold text-slate-700">Qualité</span>
+      <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="qualite" value="Bio" class="w-4 h-4"> Bio</label>
+      <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="qualite" value="Végétarien" class="w-4 h-4"> Végétarien</label>
+      <label class="flex items-center gap-2 text-sm"><input type="checkbox" name="qualite" value="Classique" class="w-4 h-4"> Classique</label>
+    </div>
+
+    <div class="flex justify-end gap-2.5">
+      <button type="button" id="Annuler" class="h-10 px-4 rounded-md border border-slate-300 bg-white text-sm">Annuler</button>
+      <button type="submit" class="btn-submit h-10 px-4 rounded-md bg-orange-500 hover:bg-orange-600 text-sm font-semibold text-white">Ajouter</button>
+    </div>
+  </div>
+</form>
 
 
     <script type="module" src="./script.js"></script>
