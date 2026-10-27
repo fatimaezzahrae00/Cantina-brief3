@@ -14,9 +14,6 @@
         <img src="img/logo.png" alt="logo" height="90px" width="200px">
         <div class="flex items-center gap-3">
             <span class="border border-gray-200 rounded-lg px-4 py-2 text-gray-500">Semaine du 19 oct.</span>
-             <!-- <button class="border border-gray-200 rounded-lg px-3 py-2">🌙 Mode Sombre</button>  -->
-            <!-- <button class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-lg">+ Ajouter une
-                recette</button> -->
 
         </div>
     </header>
@@ -76,288 +73,196 @@
 
             </div>
             <div class="flex justify-between items-center mb-6">
-                <p class="text-gray-500">Glissez une recette ou sélectionnez-la dans chaque créneau.</p>
+                
+<div class="mt-8">
+    <p class="text-gray-500 mb-6">
+        Sélectionnez une recette dans chaque créneau.
+    </p>
 
-                <div class="flex gap-3">
-                    <!-- <button class="bg-white px-4 py-2 rounded-lg shadow">Cartes</button>
-                    <button class="px-4 py-2 rounded-lg text-gray-500">Tableau</button> -->
-                    <!-- <button class="bg-green-100 text-green-800 px-4 py-2 rounded-full border border-green-300">Compléter
-                        la semaine</button> -->
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
+
+        <!-- Lundi -->
+        <div class="bg-white rounded-2xl border border-gray-200 border-t-4 border-t-green-500 overflow-hidden">
+            <div class="p-4 border-b">
+                <p class="text-xs text-gray-500">19 OCT.</p>
+                <h2 class="text-xl font-bold">Lundi</h2>
+            </div>
+
+            <div class="p-4 space-y-3">
+                <div>
+                    <p class="text-xs text-gray-500 mb-1"><span class="text-green-500">●</span> ENTRÉE</p>
+                    <select class="menu-select w-full border border-slate-700 rounded-md p-2" data-type="Entrée">
+                        <option value="">Choisir une entrée</option>
+                    </select>
+                </div>
+
+                <div>
+                    <p class="text-xs text-gray-500 mb-1"><span class="text-purple-500">●</span> PLAT PRINCIPAL</p>
+                    <select class="menu-select w-full border border-slate-700 rounded-md p-2" data-type="Plat principal">
+                        <option value="">Choisir un plat principal</option>
+                    </select>
+                </div>
+
+                <div>
+                    <p class="text-xs text-gray-500 mb-1"><span class="text-orange-400">●</span> DESSERT</p>
+                    <select class="menu-select w-full border border-slate-700 rounded-md p-2" data-type="Dessert">
+                        <option value="">Choisir un dessert</option>
+                    </select>
                 </div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
 
-                <!--First card for monday-->
-                <div class="bg-white rounded-2xl border border-gray-200 border-t-4 border-t-green-500 overflow-hidden">
-                    <div class="p-4 border-b">
-                         <div class="flex items-center justify-between">
-                            <p class="text-xs text-gray-500">20 OCT.</p>
-        
-                        </div>
-                        <h2 class="text-xl font-bold">Lundi</h2>
-                    </div>
-                <div class="p-4">
-                    <div class="mb-4 pb-3 border-b">
-                    <p class="text-xs text-gray-500 mt-4"><span class="text-green-500">●</span> ENTRÉE</p>
-                    <select name="card" id="selection" class="w-full border border-slate-700 rounded-md p-2 ">
-                        <option value="selection">Choisir une entrée</option>
-                    </select>
-                    </div>
-                    <div class="mb-4 pb-3 border-b">
-                    <p class="text-xs text-gray-500"><span class="text-purple-500">●</span> PLAT PRINCIPAL</p>
-                    <select name="card" id="selection" class="w-full border border-slate-700 rounded-md p-2 ">
-                        <option value="selection">Choisir un Plat principal</option>
-                    </select>
-                    </div>
-                    <p class="text-xs text-gray-500"><span class="text-orange-400">●</span> DESSERT</p>
-                   <select name="card" id="selection" class="w-full border border-slate-700 rounded-md p-2 ">
-                        <option value="selection">Choisir un dessert</option>
+            <div class="bg-gray-100 p-4 flex justify-between items-center">
+                <p class="font-semibold">Total du jour</p>
+                <p class="total text-2xl font-bold">0 <span class="text-xs font-normal text-gray-500">/ 50 DH</span></p>
+            </div>
+        </div>
+
+        <!-- Mardi -->
+        <div class="bg-white rounded-2xl border border-gray-200 border-t-4 border-t-green-500 overflow-hidden">
+            <div class="p-4 border-b">
+                <p class="text-xs text-gray-500">20 OCT.</p>
+                <h2 class="text-xl font-bold">Mardi</h2>
+            </div>
+
+            <div class="p-4 space-y-3">
+                <div>
+                    <p class="text-xs text-gray-500 mb-1"><span class="text-green-500">●</span> ENTRÉE</p>
+                    <select class="menu-select w-full border border-slate-700 rounded-md p-2" data-type="Entrée">
+                        <option value="">Choisir une entrée</option>
                     </select>
                 </div>
-                    <!-- <div class="p-4">
-                        
-                        <div class="mb-4 pb-3 border-b">
-                            <p class="text-xs text-gray-500"><span class="text-green-500">●</span> ENTRÉE</p>
-                            <p class="font-semibold">Velouté de courgettes</p>
-                            <p class="text-xs text-gray-400">+6 DH</p>
-                        </div>
-                        <div class="mb-4 pb-3 border-b">
-                            <p class="text-xs text-gray-500"><span class="text-purple-500">●</span> PLAT PRINCIPAL</p>
-                            <p class="font-semibold">Tajine de poulet</p>
-                            <p class="text-xs text-gray-400">+27 DH</p>
-                        </div>
-                        <div class="mb-2">
-                            <p class="text-xs text-gray-500"><span class="text-orange-400">●</span> DESSERT</p>
-                            <p class="font-semibold">Fruits de saison</p>
-                            <p class="text-xs text-gray-400">+7 DH</p>
-                        </div>
-                    </div> -->
 
-                    <div class="bg-gray-100 p-4 flex justify-between items-center">
-                        <div>
-                            <p class="font-semibold">Total du jour</p>
-                            <!-- <p class="text-xs text-gray-500">10 DH restants</p> -->
-                        </div>
-                        <p class="text-2xl font-bold">0 <span class="text-xs font-normal text-gray-500">/ 50 DH</span>
-                        </p>
-                    </div>
+                <div>
+                    <p class="text-xs text-gray-500 mb-1"><span class="text-purple-500">●</span> PLAT PRINCIPAL</p>
+                    <select class="menu-select w-full border border-slate-700 rounded-md p-2" data-type="Plat principal">
+                        <option value="">Choisir un plat principal</option>
+                    </select>
                 </div>
 
-                <div class="bg-white rounded-2xl border border-gray-200 border-t-4 border-t-green-500 overflow-hidden">
-                    <div class="p-4 border-b">
-                         <div class="flex items-center justify-between">
-                            <p class="text-xs text-gray-500">20 OCT.</p>
-                            
-                        </div>
-                        <h2 class="text-xl font-bold">Mardi</h2>
-                    </div>
-
-                    <div class="p-4">
-                        <div class="mb-4 pb-3 border-b">
-                    <p class="text-xs text-gray-500 mt-4"><span class="text-green-500">●</span> ENTRÉE</p>
-                    <select name="card" id="selection" class="w-full border border-slate-700 rounded-md p-2 ">
-                        <option value="selection">Choisir une entrée</option>
+                <div>
+                    <p class="text-xs text-gray-500 mb-1"><span class="text-orange-400">●</span> DESSERT</p>
+                    <select class="menu-select w-full border border-slate-700 rounded-md p-2" data-type="Dessert">
+                        <option value="">Choisir un dessert</option>
                     </select>
-                    </div>
-                    <div class="mb-4 pb-3 border-b">
-                    <p class="text-xs text-gray-500"><span class="text-purple-500">●</span> PLAT PRINCIPAL</p>
-                    <select name="card" id="selection" class="w-full border border-slate-700 rounded-md p-2 ">
-                        <option value="selection">Choisir un plat principal</option>
-                    </select>
-                    </div>
-                    <p class="text-xs text-gray-500"><span class="text-orange-400">●</span> DESSERT</p>
-                   <select name="card" id="selection" class="w-full border border-slate-700 rounded-md p-2 ">
-                        <option value="selection">Choisir un dessert</option>
-                    </select>
+                </div>
+            </div>
 
-                        <!-- <div class="mb-4 pb-3 border-b">
-                            <p class="text-xs text-gray-500"><span class="text-green-500">●</span> ENTRÉE</p>
-                            <p class="font-semibold">Salade marocaine</p>
-                            <p class="text-xs text-gray-400">+7 DH</p>
-                        </div>
-                        <div class="mb-4 pb-3 border-b">
-                            <p class="text-xs text-gray-500"><span class="text-purple-500">●</span> PLAT PRINCIPAL</p>
-                            <p class="font-semibold">Couscous aux légumes</p>
-                            <p class="text-xs text-gray-400">+25 DH</p>
-                        </div>
-                        <div class="mb-2">
-                            <p class="text-xs text-gray-500"><span class="text-orange-400">●</span> DESSERT</p>
-                            <p class="font-semibold">Yaourt au miel</p>
-                            <p class="text-xs text-gray-400">+6 DH</p>
-                        </div> -->
-                    </div>
+            <div class="bg-gray-100 p-4 flex justify-between items-center">
+                <p class="font-semibold">Total du jour</p>
+                <p class="total text-2xl font-bold">0 <span class="text-xs font-normal text-gray-500">/ 50 DH</span></p>
+            </div>
+        </div>
 
-                    <div class="bg-gray-100 p-4 flex justify-between items-center">
-                        <div>
-                            <p class="font-semibold">Total du jour</p>
-                            <!-- <p class="text-xs text-gray-500">12 DH restants</p> -->
-                        </div>
-                        <p class="text-2xl font-bold">0 <span class="text-xs font-normal text-gray-500">/ 50 DH</span>
-                        </p>
-                    </div>
+        <!-- Mercredi -->
+        <div class="bg-white rounded-2xl border border-gray-200 border-t-4 border-t-green-500 overflow-hidden">
+            <div class="p-4 border-b">
+                <p class="text-xs text-gray-500">21 OCT.</p>
+                <h2 class="text-xl font-bold">Mercredi</h2>
+            </div>
+
+            <div class="p-4 space-y-3">
+                <div>
+                    <p class="text-xs text-gray-500 mb-1"><span class="text-green-500">●</span> ENTRÉE</p>
+                    <select class="menu-select w-full border border-slate-700 rounded-md p-2" data-type="Entrée">
+                        <option value="">Choisir une entrée</option>
+                    </select>
                 </div>
 
-                <div class="bg-white rounded-2xl border border-gray-200 border-t-4 border-t-green-500 overflow-hidden">
-                    <div class="p-4 border-b">
-                         <div class="flex items-center justify-between">
-                            <p class="text-xs text-gray-500">20 OCT.</p>
-                            
-                        </div>
-                        <h2 class="text-xl font-bold">Mercredi</h2>
-                    </div>
-
-                    <div class="p-4">
-                        <div class="mb-4 pb-3 border-b">
-                    <p class="text-xs text-gray-500 mt-4"><span class="text-green-500">●</span> ENTRÉE</p>
-                    <select name="card" id="selection" class="w-full border border-slate-700 rounded-md p-2 ">
-                        <option value="selection">Choisir une entrée</option>
+                <div>
+                    <p class="text-xs text-gray-500 mb-1"><span class="text-purple-500">●</span> PLAT PRINCIPAL</p>
+                    <select class="menu-select w-full border border-slate-700 rounded-md p-2" data-type="Plat principal">
+                        <option value="">Choisir un plat principal</option>
                     </select>
-                    </div>
-                    <div class="mb-4 pb-3 border-b">
-                    <p class="text-xs text-gray-500"><span class="text-purple-500">●</span> PLAT PRINCIPAL</p>
-                    <select name="card" id="selection" class="w-full border border-slate-700 rounded-md p-2 ">
-                        <option value="selection">Choisir un plat principal</option>
-                    </select>
-                    </div>
-                    <p class="text-xs text-gray-500"><span class="text-orange-400">●</span> DESSERT</p>
-                   <select name="card" id="selection" class="w-full border border-slate-700 rounded-md p-2 ">
-                        <option value="selection">Choisir un dessert</option>
-                    </select>
-
-                        <!-- <div class="mb-4 pb-3 border-b">
-                            <p class="text-xs text-gray-500"><span class="text-green-500">●</span> ENTRÉE</p>
-                            <p class="font-semibold">Velouté de courgettes</p>
-                            <p class="text-xs text-gray-400">+6 DH</p>
-                        </div>
-                        <div class="mb-4 pb-3 border-b">
-                            <p class="text-xs text-gray-500"><span class="text-purple-500">●</span> PLAT PRINCIPAL</p>
-                            <p class="font-semibold">Tajine de poulet</p>
-                            <p class="text-xs text-gray-400">+27 DH</p>
-                        </div>
-                        <div class="mb-2">
-                            <p class="text-xs text-gray-500"><span class="text-orange-400">●</span> DESSERT</p>
-                            <p class="font-semibold">Fruits de saison</p>
-                            <p class="text-xs text-gray-400">+7 DH</p>
-                        </div> -->
-                    </div>
-
-                    <div class="bg-gray-100 p-4 flex justify-between items-center">
-                        <div>
-                            <p class="font-semibold">Total du jour</p>
-                            <!-- <p class="text-xs text-gray-500">10 DH restants</p> -->
-                        </div>
-                        <p class="text-2xl font-bold">0 <span class="text-xs font-normal text-gray-500">/ 50 DH</span>
-                        </p>
-                    </div>
                 </div>
 
-                
-                <div class="bg-white rounded-2xl border border-gray-200 border-t-4 border-t-green-500 overflow-hidden">
-                    <div class="p-4 border-b">
-                        
-                        <div class="flex items-center justify-between">
-                            <p class="text-xs text-gray-500">20 OCT.</p>
-                    
-                        </div>
-                        <h2 class="text-xl font-bold">Jeudi</h2>
-                    </div>
-                    
-                    <div class="p-4">
-                        <div class="mb-4 pb-3 border-b">
-                    <p class="text-xs text-gray-500 mt-4"><span class="text-green-500">●</span> ENTRÉE</p>
-                    <select name="card" id="selection" class="w-full border border-slate-700 rounded-md p-2 ">
-                        <option value="selection">Choisir une entrée</option>
+                <div>
+                    <p class="text-xs text-gray-500 mb-1"><span class="text-orange-400">●</span> DESSERT</p>
+                    <select class="menu-select w-full border border-slate-700 rounded-md p-2" data-type="Dessert">
+                        <option value="">Choisir un dessert</option>
                     </select>
-                    </div>
-                    <div class="mb-4 pb-3 border-b">
-                    <p class="text-xs text-gray-500"><span class="text-purple-500">●</span> PLAT PRINCIPAL</p>
-                    <select name="card" id="selection" class="w-full border border-slate-700 rounded-md p-2 ">
-                        <option value="selection">Choisir un plat principal</option>
-                    </select>
-                    </div>
-                    <p class="text-xs text-gray-500"><span class="text-orange-400">●</span> DESSERT</p>
-                   <select name="card" id="selection" class="w-full border border-slate-700 rounded-md p-2 ">
-                        <option value="selection">Choisir un dessert</option>
-                    </select>
-                        <!-- <div class="mb-4 pb-3 border-b">
-                            <p class="text-xs text-gray-500"><span class="text-green-500">●</span> ENTRÉE</p>
-                            <p class="font-semibold">Salade marocaine</p>
-                            <p class="text-xs text-gray-400">+7 DH</p>
-                        </div>
-                        <div class="mb-4 pb-3 border-b">
-                            <p class="text-xs text-gray-500"><span class="text-purple-500">●</span> PLAT PRINCIPAL</p>
-                            <p class="font-semibold">Couscous aux légumes</p>
-                            <p class="text-xs text-gray-400">+25 DH</p>
-                        </div>
-                        <div class="mb-2">
-                            <p class="text-xs text-gray-500"><span class="text-orange-400">●</span> DESSERT</p>
-                            <p class="font-semibold">Yaourt au miel</p>
-                            <p class="text-xs text-gray-400">+6 DH</p>
-                        </div> -->
-                    </div>
-
-                    <div class="bg-gray-100 p-4 flex justify-between items-center">
-                        <div>
-                            <p class="font-semibold">Total du jour</p>
-                            <!-- <p class="text-xs text-gray-500">12 DH restants</p> -->
-                        </div>
-                        <p class="text-2xl font-bold">0 <span class="text-xs font-normal text-gray-500">/ 50 DH</span>
-                        </p>
-                    </div>
                 </div>
-                <div class="bg-white rounded-2xl border border-gray-200 border-t-4 border-t-green-500 overflow-hidden">
-                    <div class="p-4 border-b">
-                         <div class="flex items-center justify-between">
-                            <p class="text-xs text-gray-500">20 OCT.</p>
-                            
-                        </div>
-                        <h2 class="text-xl font-bold">Vendredi</h2>
-                    </div>
+            </div>
 
-                    <div class="p-4">
-                        <div class="mb-4 pb-3 border-b">
-                    <p class="text-xs text-gray-500 mt-4"><span class="text-green-500">●</span> ENTRÉE</p>
-                    <select name="card" id="selection" class="w-full border border-slate-700 rounded-md p-2 ">
-                        <option value="selection">Choisir une entrée</option>
-                    </select>
-                    </div>
-                    <div class="mb-4 pb-3 border-b">
-                    <p class="text-xs text-gray-500"><span class="text-purple-500">●</span> PLAT PRINCIPAL</p>
-                    <select name="card" id="selection" class="w-full border border-slate-700 rounded-md p-2 ">
-                        <option value="selection">Choisir un plat principal</option>
-                    </select>
-                    </div>
-                    <p class="text-xs text-gray-500"><span class="text-orange-400">●</span> DESSERT</p>
-                   <select name="card" id="selection" class="w-full border border-slate-700 rounded-md p-2 ">
-                        <option value="selection">Choisir un dessert</option>
-                    </select>
-                        <!-- <div class="mb-4 pb-3 border-b">
-                            <p class="text-xs text-gray-500"><span class="text-green-500">●</span> ENTRÉE</p>
-                            <p class="font-semibold">Velouté de courgettes</p>
-                            <p class="text-xs text-gray-400">+6 DH</p>
-                        </div>
-                        <div class="mb-4 pb-3 border-b">
-                            <p class="text-xs text-gray-500"><span class="text-purple-500">●</span> PLAT PRINCIPAL</p>
-                            <p class="font-semibold">Tajine de poulet</p>
-                            <p class="text-xs text-gray-400">+27 DH</p>
-                        </div>
-                        <div class="mb-2">
-                            <p class="text-xs text-gray-500"><span class="text-orange-400">●</span> DESSERT</p>
-                            <p class="font-semibold">Fruits de saison</p>
-                            <p class="text-xs text-gray-400">+7 DH</p>
-                        </div> -->
-                    </div>
+            <div class="bg-gray-100 p-4 flex justify-between items-center">
+                <p class="font-semibold">Total du jour</p>
+                <p class="total text-2xl font-bold">0 <span class="text-xs font-normal text-gray-500">/ 50 DH</span></p>
+            </div>
+        </div>
 
-                    <div class="bg-gray-100 p-4 flex justify-between items-center">
-                        <div>
-                            <p class="font-semibold">Total du jour</p>
-                            <!-- <p class="text-xs text-gray-500">10 DH restants</p> -->
-                        </div>
-                        <p class="text-2xl font-bold">0 <span class="text-xs font-normal text-gray-500">/ 50 DH</span>
-                        </p>
-                    </div>
+        <!-- Jeudi -->
+        <div class="bg-white rounded-2xl border border-gray-200 border-t-4 border-t-green-500 overflow-hidden">
+            <div class="p-4 border-b">
+                <p class="text-xs text-gray-500">22 OCT.</p>
+                <h2 class="text-xl font-bold">Jeudi</h2>
+            </div>
+
+            <div class="p-4 space-y-3">
+                <div>
+                    <p class="text-xs text-gray-500 mb-1"><span class="text-green-500">●</span> ENTRÉE</p>
+                    <select class="menu-select w-full border border-slate-700 rounded-md p-2" data-type="Entrée">
+                        <option value="">Choisir une entrée</option>
+                    </select>
                 </div>
 
+                <div>
+                    <p class="text-xs text-gray-500 mb-1"><span class="text-purple-500">●</span> PLAT PRINCIPAL</p>
+                    <select class="menu-select w-full border border-slate-700 rounded-md p-2" data-type="Plat principal">
+                        <option value="">Choisir un plat principal</option>
+                    </select>
+                </div>
+
+                <div>
+                    <p class="text-xs text-gray-500 mb-1"><span class="text-orange-400">●</span> DESSERT</p>
+                    <select class="menu-select w-full border border-slate-700 rounded-md p-2" data-type="Dessert">
+                        <option value="">Choisir un dessert</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="bg-gray-100 p-4 flex justify-between items-center">
+                <p class="font-semibold">Total du jour</p>
+                <p class="total text-2xl font-bold">0 <span class="text-xs font-normal text-gray-500">/ 50 DH</span></p>
+            </div>
+        </div>
+
+        <!-- Vendredi -->
+        <div class="bg-white rounded-2xl border border-gray-200 border-t-4 border-t-green-500 overflow-hidden">
+            <div class="p-4 border-b">
+                <p class="text-xs text-gray-500">23 OCT.</p>
+                <h2 class="text-xl font-bold">Vendredi</h2>
+            </div>
+
+            <div class="p-4 space-y-3">
+                <div>
+                    <p class="text-xs text-gray-500 mb-1"><span class="text-green-500">●</span> ENTRÉE</p>
+                    <select class="menu-select w-full border border-slate-700 rounded-md p-2" data-type="Entrée">
+                        <option value="">Choisir une entrée</option>
+                    </select>
+                </div>
+
+                <div>
+                    <p class="text-xs text-gray-500 mb-1"><span class="text-purple-500">●</span> PLAT PRINCIPAL</p>
+                    <select class="menu-select w-full border border-slate-700 rounded-md p-2" data-type="Plat principal">
+                        <option value="">Choisir un plat principal</option>
+                    </select>
+                </div>
+
+                <div>
+                    <p class="text-xs text-gray-500 mb-1"><span class="text-orange-400">●</span> DESSERT</p>
+                    <select class="menu-select w-full border border-slate-700 rounded-md p-2" data-type="Dessert">
+                        <option value="">Choisir un dessert</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="bg-gray-100 p-4 flex justify-between items-center">
+                <p class="font-semibold">Total du jour</p>
+                <p class="total text-2xl font-bold">0 <span class="text-xs font-normal text-gray-500">/ 50 DH</span></p>
+            </div>
+        </div>
+
+    </div>
+</div>
     </main>
     <section>
 
@@ -377,23 +282,9 @@
         </div>
 
 
-        <div class="flex justify-between items-center mb-6">
-            <!-- <div class="relative w-80">
-                <i data-lucide="search" class="w-5 h-5 text-gray-400 absolute left-4 top-3.5"></i>
-                <input type="text" placeholder="Rechercher une recette..."
-                    class="bg-white border border-gray-200 rounded-xl pl-12 pr-4 py-3 w-full">
-            </div> -->
-
-            <!-- <div class="flex gap-2">
-                <button class="bg-green-900 text-white font-semibold px-4 py-3 rounded-xl">Toutes</button>
-                <button class="text-gray-500 font-semibold px-4 py-3 rounded-xl hover:bg-white">Entrée</button>
-                <button class="text-gray-500 font-semibold px-4 py-3 rounded-xl hover:bg-white">Plats</button>
-                <button class="text-gray-500 font-semibold px-4 py-3 rounded-xl hover:bg-white">Dessert</button>
-            </div> -->
-        </div>
 
 
-        <div id="listR" class=" bg-red-500 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div id="listR" class=" bg-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
 
 
 
